@@ -1,0 +1,2277 @@
+<!- ========================================================         
+          Дана сторінка була створена Олексієм Смірновим, 
+          який є її автором на основі дизайн-макету, створеного 
+          компанією Epixela. При цьому даний її автор суттєво 
+          модифікував даний її дизайн і додав до нього певні 
+          елементи, що суттєво її покращують і яких не було 
+          в початковому варіанті.
+          Всі авторські права на неї налажать даному автору.
+          Контакти автора для всіх питань.
+          Telegram - @speccomp47
+          Viber, WhatsApp, телефон - +380682190314.
+      ========================================================-->
+           
+  <!--=========================================================               
+           This page was created by Alexey Smirnov, who is its 
+           author based on a design layout created by the Epixela 
+           company. At the same time, this author significantly 
+           modified this design and added certain elements to it 
+           that significantly improve it and which were not in 
+           the original version.
+           All copyrights to it belong to this author.
+           Contact the author for all questions.
+           Telegram - @speccomp47
+          Viber, WhatsApp, телефон - +380682190314.
+================================================================-->        
+<!DOCTYPE html>
+<html id=starthtml lang="en">
+  <head>
+    <!-- Задаємо параметри viewport -->
+    <meta name="viewport" content="width=device-width, 
+          height=device-height,  initial-scale=1.0 user-scalable=yes">
+    <!--Обираємо потрібну нам кодировку-->
+    <meta charset="UTF-8">
+    <title>WEB page cleaning company MARY CLEANING</title>
+    <!-- Підключаємо потрібні нам  стилі -->
+    <link rel="stylesheet" href="/CSS/mary-cleaning.css">
+    <!-- Підключаємо потрібні нам шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <audio src="/audio/Loneliness.mp3" id=Lonelinessaudio></audio>
+        <audio
+          id=HowITWorkAudio
+          src="/audio/rise-and-shine-positive-piano-224385.mp3">
+        </audio>
+      <audio 
+        id=audioforsectionportfoliolink
+        src="audio/soft-romantic-folk-melody-flute-331843.mp3">
+      </audio>
+      <audio src="audio/ModernTalking/ Atlantis Is Calling.mp3" id=SoundForSectionDivRegularcleaning></audio>
+      <audio src="audio/ModernTalking/CheriCheriLady.mp3" id=SoundForSectionDivRegularcleaning1></audio>
+      <audio src="audio/ModernTalking/WithALittleLove.mp3" id=ModernTalkingWithALittleLove></audio>
+      <audio id=SoundEffect src="/audio/OlexandrPonamaryov-gimn-Ukrainy.mp3"></audio>
+      <audio src="audio/Oi-u-lusi-chervona-kalina.mp3" id=SndEffect></audio>
+      <audio  id=professionalsnd>
+        <source src="audio/Professional.mp3" type="audio/mp3">
+      </audio>
+      <script> 
+        function stopplayaudiovideo(stopaudiovideoplay) {
+          const stopplay=()=>{
+          stopaudiovideoplay.currentTime=0;
+          stopaudiovideoplay.pause();
+          };
+          stopplay();
+        };
+      </script>
+    <!-- header, об'єкти заголовка (шапки) даної сторінки -->     
+      <header>
+        <!-- Вони організовані як таблиця так як окремий блок DI
+         До їх складу входять зображення флагу та логотипу компанїї 
+         а також навігація  і блок 100% Business Growth
+         При  цьому  зображення флагу та логотипу компанїї 
+         а також навігація організовані  у вигляду невидимої таблиці 
+        Але пвоерх них розиташована секція з поточним часом та датою-->
+        <div id="divForSectiondateandtime">
+             <section class=dateandtime></section>
+       </div>
+        <script>
+         const elements=document.getElementsByClassName('dateandtime');
+         const mysectiondateandtime=elements[0];
+         mysectiondateandtime.style.width='60vw';
+        // mysectiondateandtime.style.height='2vh';
+        mysectiondateandtime.style.borderRadius="10px";
+        mysectiondateandtime.style.border="1px solid #000";
+        //mysectiondateandtime.style.backgroundColor="#fff";
+        
+         function UpdateDateAndTime() {
+          const DateAndTime=new Date; //Створюємо об'єкт класу Date і отримумо дату та час.
+          const Time=DateAndTime.toLocaleTimeString();
+          const currentDate=DateAndTime.toLocaleDateString("en-En",
+            {
+              weekday:"long",year:"numeric",month:'long',day:'numeric'
+
+            }
+          );
+          mysectiondateandtime.textContent ='';
+          mysectiondateandtime.textContent += `Time - ${Time}`;
+          mysectiondateandtime.textContent += `Date - ${currentDate}`;
+
+         };
+         UpdateDateAndTime();
+         const myfunction=UpdateDateAndTime;
+         setInterval(myfunction,1000);
+        </script>
+        <!--Цей скрипт генерує час та дату, які будуть відображатися в даній секції
+        section class=dateandtime-->
+         <!-- #region tabel_header-->
+        <table id="table_header" >    
+          <!-- Це  невидима таблиця зображеннями флагу та логотипу компанїї 
+         а також з навігацією -->
+          <tr class="row_images"> 
+            <!--це рядок таблиці с зображеннями флагу та логотипу компанії
+            та з навігацією-->
+            <td id="cell_table_header_flag"> <!--Це комірка з зображенням флагу -->
+               <img id="imgflag" 
+                src="/graphics/National  flag/GB.png" 
+                alt="National of flag Greate Britany">
+            </td>
+            <td id="cell_table_header_logo" width=159 height=183> <!--Це комірка з зображенням лого  компаніїї -->
+              <img class="imglogo" src="/graphics/Logo/logo 1.png" 
+              alt="Logo of company MARY CLEANING">
+            </td>
+       
+            <td id="cell_table_header_nav" >  
+              <!-- Це комірка з навігацією, p ,блоком 100% Business Growth
+               та з зображенням чистильщика.
+               Всі ці елементи розташовані в середені контейнера DIV,
+               який має ідентифікатор "div_nav" -->
+          <div id="div_nav">
+              <!--Тут розташований блок навігації-->
+              <nav id="nav_header">
+                <a id="link_header" href="#ourservice"> Our Service</a>
+                <a id="link_header" href="#aboutus">about us</a>
+                <a id="link_header" href="#See-the-cleaning">how we work</a>
+                <a id="link_header" href="#contacts">contacts</a>
+                <a id="link_header" href="#aboutcommand">
+                About<Br> our command</a>
+                <a id="link_header_franchise" style="text-align: center;" href="#franchise">franchise<BR>Our history, our life path
+                 </a>
+            </nav>
+            <!--<div>-->
+       <!-- В заголовку даної страниці у нас також  є блок 100% Business Growth 
+      і зображення чистильщика які теж реалізовані за 
+       в середені даної таблиці за допомогою наступного контейнера DIV який 
+       має ідентіфікатор "Business_Growth", і який розташований після 
+       блока nav поточного контейнера DIV поточної комірки 
+       поточного рядка даної таблиці.
+       Цей контейнер разом з блоком навігації теж розташований в даному контейнері 
+       div з ідентифікатором "div_nav".-->
+          
+         <div id="Business_Growth">
+                <!--В даному контейнері розташований блок 100% Business Growth,
+                який складається с зображення та з 
+                відповідного тексту, розташованого в теж відповідном контейнері div  -->
+                <img id=ActivityImg src="/graphics/Iconly/Activity.png" alt="Activity.png">
+                <!-- В наступному конейнері DIV розташований власне текст даного блоку. 
+                Даний контейнер має клас text-Buisness-Growth і в середені нього 
+                розташований ще один контейнер DIV з класом text-Buisness-Growth-Insert 
+                з додатковим зображенням та текстом так як в даному контейнері розташований 
+               головний його текст. -->
+               <div class="text-Buisness-Growth">
+                 <div 
+                  style=
+                  "margin:0; color:#22616B; padding:0;line-height: auto;font-style: normal;font-size: 14px;"
+                  >
+                 <!-- В цьому додатковому контейнеру міститься додатковий текст
+                   100% Business Growth -->
+                  100% Business Growth
+                 </div> <!--Кінець даного контейнеру з даним текстом-->
+                    <div id=stars>
+                      <!-- В даному контейнеру div розташоване зображенння зірки
+                       і додатковий контейнер div з додатковим текстом -->
+                      <img src="/graphics/Iconly/Star.png" alt="Star.png">
+                        <div id=addtext>
+                          <!--В даному конейнеру div id=addtext 
+                            містяться два додаткових контейнера div
+                          з додатковим текстом "5.0" і "(15k cleanings)".
+                          Перший з них має має клас "addtext1" і містить текст "5.0",
+                          другий з них має клас "addtext2" і містить текст "(15k cleanings)".
+                          -->
+                               <div class="addtext1">5.0</div>
+                               <div class="addtext2">(15k cleanings)</div>
+
+                        </div> <!--Кінець даного контейнеру div id=addtext-->
+                    </div> <!-- Кінець контейнеру div id=stars-->
+                  </div> <!--Кінець контейнеру div з класом "text-Business_Growth" -->                                  
+                </div>  <!--Кінець контейнеру div з id "Business_Growth"-->
+                  
+             |<!-- </div>  -->
+                
+      
+          </div> <!--Кінець контейнеру div з ідентифікатором "div_nav"-->
+      
+      </td>                 
+    </tr>
+    </table>
+ <!--#endregion-->
+        <!-- до заголовка даної сторінки входить також текст 
+         Try our service with 100% garantee з зображенням лампочки. Він
+         разом з даним зображенням лампочки розташований в середені відповідного 
+         контейнера div id="try_our_service" в середені якого він разташований за допомогою
+         відповідних контейнерів div.
+         Даний контейнер входить до складу ще одного контейнера div з классом ourservice
+         до складу якого входить ще один контейнер div id=guarantee
+         з текстом 
+         "Flawless cleanliness with a 100% guarantee!
+          That’s why our guarantee is based 
+         We know that true service is not just cleaning, but a perfect result.
+         on four levels of quality control, 
+         ensuring consistently high standards."
+         а також контейнер ще один контейнер div з розташованими нижче об'єктами-->
+       <div class="ourservice"> 
+         <div id="try_our_service">
+           <div id="Try-service">
+            <!-- В цьому контейнері div виводиться текст Try our service -->
+            <nobr>
+              Try our service 
+            </nobr>
+           </div> <!--Кінець даного контейнера div id="Try-service"-->
+          
+          <div id="try-sevice1">
+            <!-- В цьому контйнері знаходяться два вкладених контейнери div.
+             В першому з них виводиться текст with 100% garantee.
+             В другому - зображення лампочки  -->
+              <div class="garantee" >
+              <div style="white-space: nowrap;">
+                with 100%
+              </div> 
+              garantee
+            </div>
+            <div class="picture">
+              <img class=Lamp src="/graphics/Lamp/Frame.png" alt="Lamp">
+              <script>
+                const ArrayElementByClass=document.getElementsByClassName('picture');
+                const pictureLamp=ArrayElementByClass[0];
+                if (480>=screen.width) pictureLamp.style.height='20vh';
+              </script>
+            </div>
+          </div> <!--Кінець даного контейнера div id="try-sevice1"-->
+          </div> <!--Кінець даного контейнера div id="try_our_service"-->
+          <div id=guarantee>
+            <!--  В цьому контейнері div виводиться текст 
+               "Flawless cleanliness with a 100% guarantee!
+           know that true service is not just cleaning, but a perfect result.
+         That’s why our guarantee is based 
+          on four levels of quality control, 
+         ensuring consistently high standards." -->
+            <div id=FlawlessCleanliness
+            >
+            Flawless cleanliness with a 100% guarantee! 
+          </div> 
+          <div id="true-service-cleaning">
+          We know that true service is not just cleaning, but a 
+         <br>
+          perfect result.
+          That’s why our guarantee is based on four <br>
+          levels of quality control, ensuring consistently high 
+         <br>
+
+         standards
+         <script style="display:none">
+          const FlawlessCleanliness=document.getElementById("FlawlessCleanliness");
+
+           if (screen.width<=480) {
+            FlawlessCleanliness.innerHTML='Flawless cleanliness with <BR> a 100% guarantee!';
+              FlawlessCleanliness.style.fontSize='0.9rem';
+              FlawlessCleanliness.style.textAlign='center';
+           }
+         </script>
+           </div> <!--Кінець даного контейнера div id="true-service-cleaning"-->
+          </div> <!--Кінець даного контейнера div id=guarantee-->
+        </div>   <!--Кінець даного контейнера div class="ourservice"-->
+        <section id=headersection>
+            <!-- В даній секції розташовуються такі об'єкти хедера
+             як кнопка з надписом calculate charge free,  кнопка з
+             зображенням кнопки відтворення і надпис праворуч від 
+             другої якщо рахувати зліва кнопки Learn More, а такох спливаюча секція
+             з відео яка, з'являтиметься при натисканні на кнопку відтворення. -->
+            
+              
+            
+          <section id=sectionPlayVideo>
+            
+            <div id=DivContainerForVideo>
+              <section id="sectionforcontainerforvideo">
+              <button class="LeftButtomForSectionVideo">⬅</button>
+              <div id=DivForMaryCleaningFirstVideo>
+                
+                <div id=divfirstVideo>
+                 <video  id=firstvideo>
+                
+                  <source src="/Video/Mary Cleaning/file.mp4" type="video/mp4" >
+                  </video>
+                  <div id="controlelementforfirstvideo">
+                    <section id=controlbuttonforfirstvideofirstrow>
+                      <section id=peremotkaFirstVideo>
+                        <img id=ImgButtonPeremotka
+                        src="/graphics/Iconly/ButtomToPlayMultimedia/Peremotka.png" alt="ButtonPeremotka">
+                        <input id=sliderperemotka type=range min=0 max=100 step=1 value=0>
+                     </section>
+                     <section id=Brightness>
+                       <img id=imgBrightness src="/graphics/Iconly/ButtomToPlayMultimedia/brightness.png" alt="brightnessButton">
+                      <input id=BrightnessSlider type=range min=1 max="100" value=50>
+                      </section>
+                    </section>
+                  <section id=controlbuttonforfirstvideosecondrow>
+                      <img id=playbuttomfirstvideo src="/graphics/Iconly/ButtomToPlayMultimedia/playbuttom.png" alt="PlayButtom">
+                      <img id=pausebuttonfirstvideo src="/graphics/Iconly/ButtomToPlayMultimedia/Pausebuttom.png" alt="PauseButtom">
+                      <img id=stopbuttomfirstvideo src="/graphics/Iconly/ButtomToPlayMultimedia/StopButton.png" alt="StopButtom">
+                      <img id=fullscreenbuttomfirstvideo src="/graphics/Iconly/ButtomToPlayMultimedia/Fullscreen.png"alt="FullscreenButton">
+                      <section id=volcontrol style="gap:2px;
+                      display:flex;justify-content: center;align-items: center;height: 100%;width:100%;">
+                      <img id=imgsndvolcontrolsliderforfirstvideo
+                           src="/graphics/Iconly/ButtomToPlayMultimedia/SoundVolumeControl.jpg" 
+                           alt="SoundVolumeControlSlider">
+                      <input id=volumecontrol type=range min=0 max=10 value=0 step="0.1">
+                    <script>
+                      const volcontrol=document.getElementById('volcontrol');
+                       if (screen.width>480) volcontrol.style.flexDirection='row'
+                        else volcontrol.style.flexDirection='column';                        // margin-left: 10%;}
+                    </script>  
+                    </section>
+                    
+                    </section>
+                  </div>
+                  <script style="display:none">
+                      const firstvideo=document.getElementById("firstvideo");
+                      const firstvideoplay=document.getElementById("playbuttomfirstvideo");
+                      const firstvideopause=document.getElementById("pausebuttonfirstvideo");
+                      const firstvideostop=document.getElementById("stopbuttomfirstvideo");
+                      const firstvideofullscreen=document.getElementById("fullscreenbuttomfirstvideo");
+                      const volumecontrolslider=document.getElementById("volumecontrol");
+                      const sliderperemotka=document.getElementById("sliderperemotka");
+                      const BrightnessSlider=document.getElementById("BrightnessSlider");
+                      if (480>=screen.width) {
+                        firstvideo.style.height='50vh';
+                        firstvideofullscreen.style.height='50%';
+                        firstvideofullscreen.style.width='50%';
+                      }
+                      BrightnessSlider.addEventListener("input",
+                        ()=>{
+                          firstvideo.style.filter='brightness('+BrightnessSlider.value+'%)';
+                        }
+                      );
+                      firstvideo.addEventListener("loadedmetadata", ()=>{
+                      sliderperemotka.setAttribute("max",firstvideo.duration);
+                    });
+                      firstvideo.currentTime=0;
+                      sliderperemotka.addEventListener("input", ()=>{
+                        firstvideo.currentTime=sliderperemotka.value;
+                      });
+                      firstvideo.volume=0;
+                      volumecontrolslider.addEventListener("input",
+                      ()=>{
+                        window.requestAnimationFrame (
+                        ()=>{firstvideo.volume=volumecontrolslider.value/10;});
+                        }
+                      );
+                      firstvideoplay.addEventListener("click",()=>{
+                        if (sliderperemotka.value===firstvideo.duration) 
+                          sliderperemotka.value=0;
+                        if (firstvideo.currentTime===firstvideo.duration) 
+                           firstvideo.currentTime=0
+                        firstvideo.play();});
+                      firstvideopause.addEventListener("click",()=>{firstvideo.pause();});
+                      firstvideostop.addEventListener("click",()=>{
+                        firstvideo.currentTime=0;
+                        firstvideo.pause();});
+                      const functionclickbuttonfulscreenvideo=function () {
+                        firstvideo.requestFullscreen();
+                      };
+                      firstvideofullscreen.addEventListener("click",functionclickbuttonfulscreenvideo);
+                      const sectionPlayVideo1=document.getElementById('sectionPlayVideo');
+                    if (screen.width<=480) {
+                      sectionPlayVideo1.style.width='100vw';
+                      sectionPlayVideo1.style.height='90vh';
+                      sectionPlayVideo1.style.position='fixed';
+                      sectionPlayVideo1.style.left='0';
+                      sectionPlayVideo1.style.top='0';
+                      sectionPlayVideo1.style.right='20vw';
+                    }
+                  </script>
+                    
+                 </div>
+             
+             </div> 
+             <button class="RightButtomForSectionVideo">
+              ➡
+             </button>
+             </section>
+             <button class=CloseButtonForSectionPlayVideo>CLOSE</button>
+             <script style="display:none">
+               CloseButtonForSectionPlayVideo=document.querySelector(".CloseButtonForSectionPlayVideo");
+               CloseButtonForSectionPlayVideo.style.height="10%";
+               //console.log("CloseButtonForSectionPlayVideo.style.height="+CloseButtonForSectionPlayVideo.style.height);
+               CloseButtonForSectionPlayVideo.style.width="40%";
+               CloseButtonForSectionPlayVideo.style.border="2px solid #1E0E62";
+               CloseButtonForSectionPlayVideo.style.backgroundColor="#EDAD03";
+               CloseButtonForSectionPlayVideo.style.display="flex";
+               CloseButtonForSectionPlayVideo.style.flexDirection="column";
+               CloseButtonForSectionPlayVideo.style.justifyContent="center";
+               CloseButtonForSectionPlayVideo.style.alignItems="center";
+               CloseButtonForSectionPlayVideo.style.fontFamily="Roboto";
+               CloseButtonForSectionPlayVideo.style.fontSize="200%";
+               CloseButtonForSectionPlayVideo.style.fontWeight="Bold";
+               CloseButtonForSectionPlayVideo.style.color="#fff";
+               CloseButtonForSectionPlayVideo.style.borderRadius="28px";
+               CloseButtonForSectionPlayVideo.style.cursor="pointer";
+               const hideEvent=(hideelment)=> {
+                  setTimeout(function () {hideelment.classList="hide";},1500);
+                  setTimeout(function () {hideelment.style.display="none";},5000);                                 
+               }
+               function hide(){
+                 const firstvideo=document.getElementById("firstvideo");
+                 firstvideo.currentTime=0;
+                 firstvideo.pause();
+                 CloseButtonForSectionPlayVideo.id="hide";
+                 const deleteCloseBTNfromScreen=function () {
+                  CloseButtonForSectionPlayVideo.style.display="none";
+                 };
+                 setTimeout (deleteCloseBTNfromScreen,5000);
+                 let hideelement=document.getElementById("sectionforcontainerforvideo");
+                 hideEvent(hideelement);
+                 setTimeout(()=>{
+                   hideelement=document.getElementById("DivContainerForVideo");
+                   hideEvent(hideelement);
+                 },1000);
+                 setTimeout(()=>{
+                   hideelement=document.getElementById("sectionPlayVideo");
+                   hideEvent(hideelement);
+                 },1000);
+               };
+               CloseButtonForSectionPlayVideo.addEventListener("click", hide);
+             </script>
+            </div>
+             
+            </section>
+          <button id="header_button" style="z-index:0">
+            <!-- Тут будується кнопка з надписом calculate charge free.
+             Вона будується за допомогою контейнера 
+             button id="header_button" -->
+           
+             <div style="font-family:ABeeZee;color:white;padding:0;margin:0;">
+              calculate charge free
+            </DIV>
+            
+          </button>
+          <div id=divforheader_button1>
+            
+            <script style="width:0; height:0;display:none;">
+              function sectionPlayVideo () {
+                setTimeout (()=>{stopplayaudiovideo(document.getElementById("SndEffect"));
+
+                  function ForStyle (styleforcontainer){
+                styleforcontainer.style.color="#3922a0";
+                styleforcontainer.style.border="2px solid #3922a0";
+                styleforcontainer.style.borderRadius="28px";
+                styleforcontainer.style.display="flex";
+                styleforcontainer.style.zIndex=100;
+                setTimeout (()=>{styleforcontainer.classList="show";},2000);
+                };
+                function styleHeightandWidth
+                        (ElementForWidthAndHeigt,WidthElement,HeightElement) 
+                       {
+                        ElementForWidthAndHeigt.style.width=WidthElement;
+                        ElementForWidthAndHeigt.style.height=HeightElement;
+                       };
+                const sectionForPlayVideo=document.getElementById("sectionPlayVideo");
+                ForStyle(sectionForPlayVideo);
+                const CloseButtonForSectionPlayVideo=document.querySelector(".CloseButtonForSectionPlayVideo");
+                
+                setTimeout(()=>{
+                  CloseButtonForSectionPlayVideo.id="show";
+                },1000);
+                
+                if (CloseButtonForSectionPlayVideo.style.display==="none") {
+               CloseButtonForSectionPlayVideo.style.display="flex";
+                };             
+                const DivContainerForVideo=document.getElementById("DivContainerForVideo");
+                styleHeightandWidth (DivContainerForVideo,"90%","90%");
+                ForStyle (DivContainerForVideo);
+                
+                const sectionforcontainerforvideo=document.getElementById("sectionforcontainerforvideo");
+                styleHeightandWidth(sectionforcontainerforvideo,"85%","85%");
+                ForStyle(sectionforcontainerforvideo);
+                const DivForMaryCleaningFirstVideo=document.getElementById("DivForMaryCleaningFirstVideo");               
+                styleHeightandWidth (DivForMaryCleaningFirstVideo,"100%","100%");
+                DivForMaryCleaningFirstVideo.style.backgroundColor="#fff"
+                ForStyle (DivForMaryCleaningFirstVideo); 
+                },2000
+              );                  
+            };
+          </script>
+          <button id="header_button1" onclick="sectionPlayVideo()">
+            <!-- Тут формується кнопка з зображенням кнопки відтворення -->
+            <img src="/graphics/Iconly/Learn More icon.png" alt="Learn More icon.png">
+          </button>
+          </div>
+          <div id=DivLearnMore>
+            <!-- Тут формується надпис Learn More  -->
+            Learn<br> More <BR> (video)
+          </div>
+
+          <div id=HappyClientsExt style="z-index:0">
+            <!-- В цьому контейнері формується надпис "1000 Happy Clients" 
+             зображення зірочки і надпис "5.0"-->
+             <div id=HappyClientsInt1>
+              1000 Happy Clients
+             </div>
+             <!-- Далі виводиться зображення зірочки -->
+              <img id=Starpng src="/graphics/Iconly/Star.png" alt="Star.png">
+              <!--далі виводиться надпис "5.0", що іде після 
+              зображення зірочки-->
+              <div id=#HappyClientsInt2>5.0</div>
+          </div>
+         </section>
+            <!--Далі  виводиться  зображення чистильщика.-->
+                <img id=Cleaner src="/graphics/myika-vikon/myika.png" alt="myika.png">
+            <script>
+              const CleanerImg=document.getElementById('Cleaner');
+              if (480>=screen.width) CleanerImg.style.width='100vw';
+            </script>
+      </header>
+    <MAIN>
+         <!--#region sectionOur-Best-Services--> 
+        <section id="Our-best-services">
+          <!--В даній секції виводиться текст
+                      SERVICE
+                     Our best services за
+                     допомогою двух вкладених контейнерів div --> 
+              <div id=ourservice>
+             
+                  <div style="font-family:ABeeZee; color:#8A898E;margin:0;padding:0;">
+                    SERVICE
+                  </div>
+             
+              </div>
+              <div id="Our-best-services">
+                Our best services
+              </div>
+        </section>
+        <section id="See-the-cleaning">
+              <div class="Regular-cleaning">
+                  <button id="bottom-freequote">
+                    Free quote >>
+                  </button>
+                  <div id="General-cleaning-text">
+                    Order at home – success in life! <br>
+                    Regular cleaning without hassle <br>
+                    helps you enjoy cleanliness and <br>
+                    comfort every day. Free up your <br>
+                    time for important things while <BR>
+                    we take care of your home.<br>
+                    Click here to learn more.
+                  </div>
+                  <div id="General-Header-cleaning-Text">
+                    Regular cleaning
+                  </div>
+                  <img id=imgregclean src="/graphics/REGULAR/REGULAR.png"   alt="REGULAR.png">
+                  <section id=SectionInDivRegular-cleaning>
+                    <H1 id=HeaderInSectionInDivRegularcleaning>Regular cleaning</H1>
+                    <div id="TextinSectionDivRegularcleaning">
+                      We all really want our home to be clean and tidy.
+                      After all, a clean home is a guarantee and guarantee of beauty, cleanliness, comfort and health.
+                      And we all really want our home to be cozy, beautiful and clean.
+                      And we all really want to be healthy.
+                      And what is interesting is that it is absolutely not difficult: you just need to regularly clean and tidy it.
+                      And with the help of this service Regular cleaning we will be happy to help you
+                      with this and regularly clean and tidy your home.
+                      Your home will shine with cleanliness and order like in a fairy tale.
+                      And living in it will be a pleasure.
+                      After all, we are wizards and magicians who create magic and witchcraft of cleanliness, order and beauty for your home.
+                      Your home will be clean, cozy, beautiful and very beautiful and very cozy.
+                      And in the meantime, you can calmly go about your business (for example, playing sports or just relaxing.)
+                    </div>
+                    <button id=closeBTNinSectionInDivRegularCleaning>CLOSE</button>
+                    
+                  </section>
+                  <script style="width:0; height:0; margin:0; padding:0;">
+                     var  SectionInDivRegularcleaning=document.getElementById("SectionInDivRegular-cleaning");
+                    //  SectionInDivRegularcleaning.innerHTML="We all really want our home to be clean and tidy."
+                    var HeaderInSectionInDivRegularcleaning,closeBTNinSectionInDivRegularCleaning,
+                    TextinSectionDivRegularcleaning =document.getElementById("TextinSectionDivRegularcleaning"),
+                     HeaderInSectionInDivRegularcleaning=document.getElementById("HeaderInSectionInDivRegularcleaning"),
+                  closeBTNinSectionInDivRegularCleaning=document.getElementById("closeBTNinSectionInDivRegularCleaning");
+                      
+                  TextinSectionDivRegularcleaning.style.textAlign="center"
+                  TextinSectionDivRegularcleaning.style.width="352px";
+                  TextinSectionDivRegularcleaning.style.borderRadius="28px";
+                  TextinSectionDivRegularcleaning.style.border="2px solid";
+                  TextinSectionDivRegularcleaning.style.backgroundColor="white";
+                  function show (showobject){
+                   showobject.style.display="flex";
+                   setTimeout(()=>{showobject.classList="show";},1000);
+                  };
+                  var audiosound=document.getElementById("SoundForSectionDivRegularcleaning");
+                  function podiya() {
+                      stopplayaudiovideo(document.getElementById("SndEffect"));
+                      stopplayaudiovideo(document.getElementById("SoundForSectionDivRegularcleaning1"));
+                     
+                      show(SectionInDivRegularcleaning);
+                      SectionInDivRegularcleaning.style.flexDirection="column";
+                  SectionInDivRegularcleaning.style.justifyContent="center";
+                  SectionInDivRegularcleaning.style.alignItems="center";
+                  SectionInDivRegularcleaning.style.fontFamily="Roboto";       
+                      show(HeaderInSectionInDivRegularcleaning);
+                      show(TextinSectionDivRegularcleaning);
+                      show(closeBTNinSectionInDivRegularCleaning);
+                      audiosound.play(); 
+                      const audiorepeat=()=>{audiosound.currentTime=0;audiosound.play();};   
+                      audiosound.addEventListener("ended", audiorepeat);                    
+                  };
+                  document.getElementById("imgregclean").addEventListener("click", ()=> {
+                       podiya();}
+                 );
+                 document.getElementById("General-Header-cleaning-Text").addEventListener(
+                    "click", function(event){podiya();}
+                  );
+                 document.getElementById("General-cleaning-text").addEventListener(
+                    "click", function(event){podiya();}
+                  );
+               function stoppodiya (){
+                    function hide(hideitem) {
+                      //Дана функція забеспечує прибирання з екрану конкретного об'єкту
+                      // даної секції, який описується саме тим об'єктним значенням яке 
+                      // яке врешті решт передається саме даному її параметру-значенню 
+                      // hideitem.
+                        const stopsection=function () {
+                          setTimeout(function (){hideitem.classList="hide";},1500);
+                        };
+                      	
+                    	stopsection();
+                    }; //Кінець функції hide
+                    const displaynone =(hideitem)=>{
+                      setTimeout(function(){hideitem.style.display="none";},10000);
+                    }
+                    hide(closeBTNinSectionInDivRegularCleaning);
+                    hide(TextinSectionDivRegularcleaning);
+                    hide(HeaderInSectionInDivRegularcleaning);
+                    hide(SectionInDivRegularcleaning);
+                    displaynone(closeBTNinSectionInDivRegularCleaning);
+                    displaynone(TextinSectionDivRegularcleaning);
+                    displaynone(HeaderInSectionInDivRegularcleaning);
+                    displaynone(SectionInDivRegularcleaning);
+                    const audiostop=()=>{audiosound.pause();
+                    audiosound.currentTime=0;};
+                    setTimeout (audiostop,2000);
+                                        
+                 };//Кінець функції stoppodiya
+                
+                closeBTNinSectionInDivRegularCleaning.addEventListener("click",stoppodiya);
+                </script>
+              </div>
+              <div class="Regular-cleaning">
+                <button id="bottom-freequote1">
+                   Free quote &gt;&gt;
+                </button>
+                <div id="General-cleaning-text1">
+                  Hosting guests? Let us handle the<BR>
+                    cleaning! Our Airbnb cleaning<BR>
+                    service ensures your space is<BR>
+                    spotless, fresh, and guest-ready.<BR>
+                    Impress every visitor with a<br>
+                    perfectly maintained home, while<BR>
+                    you focus on hosting!<br>Сlick here to learn more.
+                </div>
+                <div id="General-Header-cleaning-Text1">
+                  Airbnb cleaning
+                </div>
+                <img id=imgairclean src="/graphics/airbnbcln/airbnbcln.png"   alt="REGULAR.png">
+                  <section id=SectionAirNbcleaning1>
+                    <H1 id=HeaderInSectionAirNbrcleaning1>Airbnb cleaning</H1>
+                    <div id="TextinSectionAirnbcleaning1">
+                      We love to invite and receive guests from time to time.
+                      When we have some holiday when we just want to see our friends and loved ones once again
+                      They have not been seen for a long time and who have already been bored.
+                      Or we met new people, have introduced new friends and we really want to develop our relationship with new
+                      acquaintances and friends, find something in common and interesting with him. Because all it is joy, positive emotions and a real holiday.
+                      The holiday to see your friends, acquaintances and loved ones who have not been seen for a long time.
+                      Holiday to see new faces. And yet it is a sea of ​​positive, an ocean of good mood, a sea of ​​wonderful moments, feelings, and impressions, good
+                      good gifts, words and smiles.
+                      And at the same time we always want to please our guests with delicious dishes, our good mood,
+                      Cleanliness, Uut and the comfort of your home, you want to do everything well and with your soul, you want to create for them
+                      A real holiday, a wonderful and cozy atmosphere.
+                      There is just a lot of time and very often very much time.
+                      And we will gladly make it great to make your task.
+                      Using this Airbnb Cleance service we will gladly give order, cleanliness and order in your home and
+                      We can create comfort in your home as well as a wonderful festive and cozy atmosphere.
+                      Your dwelling shines as if in a fairy tale.
+                      And your guests will surely see and appreciate it.
+                    </div>
+                    <button id=closeBTNinSectionAirNbCleaning1>CLOSE</button>
+                    
+                  </section>
+                  <script style="width:0; height:0; margin:0; padding:0;">
+                     var  SectionInAirNbcleaning=document.getElementById("SectionAirNbcleaning1"); 
+                    //var HeaderInSectionInAirNbcleaning,closeBTNinSectionInAirNbCleaning,
+                 var TextinSectionAirNbcleaning =document.getElementById("TextinSectionAirnbcleaning1"),
+                     HeaderInSectionAirNbcleaning=document.getElementById("HeaderInSectionAirNbrcleaning1"),
+                  closeBTNinSectionAirNbCleaning=document.getElementById("closeBTNinSectionAirNbCleaning1");
+                   TextinSectionAirNbcleaning.style.zIndex=20;   
+                  TextinSectionAirNbcleaning.style.textAlign="center"
+                  // TextinSectionAirNbcleaning.style.width="352px";
+                  TextinSectionAirNbcleaning.style.borderRadius="28px";
+                  TextinSectionAirNbcleaning.style.border="2px solid";
+                  TextinSectionAirNbcleaning.style.backgroundColor="white";
+                  TextinSectionAirNbcleaning.style.overflow="auto";
+                  // TextinSectionAirNbcleaning.style.height="400px";
+                  var audiosound1=document.getElementById("SoundForSectionDivRegularcleaning1");
+                  function podiya1 () {
+                    function show (showobject){
+                      showobject.style.display="flex";
+                      setTimeout(()=>{showobject.classList="show";},1000);
+                      };
+                      stopplayaudiovideo(document.getElementById("SndEffect"));
+                      show(SectionInAirNbcleaning);
+                      SectionInAirNbcleaning.style.flexDirection="column";
+                  SectionInAirNbcleaning.style.justifyContent="center";
+                  SectionInAirNbcleaning.style.alignItems="center";
+                  SectionInAirNbcleaning.style.fontFamily="Roboto";  
+                  SectionInAirNbcleaning.style.transform="translateY(-90px)";    
+                      show(HeaderInSectionAirNbcleaning);
+                      show(TextinSectionAirNbcleaning);
+                      show(closeBTNinSectionAirNbCleaning);
+                      audiosound1.play();  
+                      audiosound1.addEventListener("ended", ()=>{
+                        audiosound1.currentTime=0;
+                        audiosound1.play();
+                      }
+                    );                      
+                  };
+                  document.getElementById("imgairclean").addEventListener("click", ()=> {
+                       podiya1();}
+                 );
+                 document.getElementById("General-Header-cleaning-Text1").addEventListener(
+                    "click", function(event){podiya1();}
+                  );
+                 document.getElementById("General-cleaning-text1").addEventListener(
+                    "click", function(event){podiya1();}
+                  );
+               function stoppodiya1 (){
+                    function hide(hideitem) {
+                      //Дана функція забеспечує прибирання з екрану конкретного об'єкту
+                      // даної секції, який описується саме тим об'єктним значенням яке 
+                      // яке врешті решт передається саме даному її параметру-значенню 
+                      // hideitem.
+                        const stopsection=function () {
+                          setTimeout(function (){
+                      	hideitem.classList="hide";},1000);
+                        };
+                        
+                    	stopsection();
+                      
+                    }; //Кінець функції hide
+                   function displaynone (hideitem) {
+                      setTimeout (function(){hideitem.style.display="none";},10000); 
+                   };
+                    hide(closeBTNinSectionAirNbCleaning);
+                    hide(TextinSectionAirNbcleaning);
+                    hide(HeaderInSectionAirNbcleaning);
+                    hide(SectionInAirNbcleaning);
+                   displaynone(closeBTNinSectionAirNbCleaning);
+                   displaynone(TextinSectionAirNbcleaning);
+                   displaynone(HeaderInSectionAirNbcleaning);
+                   displaynone(SectionInAirNbcleaning);
+
+                    audiosound1.pause();
+                    audiosound1.currentTime=0;      
+                                   
+                 };//Кінець функції stoppodiya1
+                
+                closeBTNinSectionAirNbCleaning.addEventListener("click",stoppodiya1);
+                </script>
+            </div>
+            <div class="Regular-cleaning">
+              <button id="bottom-freequote2">
+                Free quote >>
+              </button>
+              <div id="DivDeepCleaningText">
+                A fresh start for your home! Our <BR>
+                  deep cleaning service removes <BR>
+                  dirt, dust, and hidden grime, <BR>
+                  leaving your space looking and <BR>
+                  feeling brand new. Perfect for <BR>
+                  seasonal refreshes or post- <br>
+                  renovation clean-ups.<br>Сlick here to learn more.
+              </div>
+              <div id="DivHeaderCleaningText">
+                Deep cleaning
+              </div>
+              <img id=imgdeepclean src="/graphics/deepcln/deepcln.png"   alt="deepcln.png">
+              <section id="intSectionDivDeepClean">
+                   <h1>Deep Cleaning</h1>
+                  <section id=intSectionDeepCleanText>
+                    We all want to be, happy, healthy and wealthy.
+We all always want a lot of positivity, a good mood, beautiful smiles.
+And we all want all our relatives and friends to be near us and be happy.
+After all, what else do we need for happiness? After all, we don't need much - we only need
+family comfort, our happy family that no amount of money can buy.
+And let's remember what pleasant emotions we experience when we enter our home
+with our relatives and friends and with our family and see that everything is impeccably 
+clean, that everything shines like crystal and like a child's tear. 
+How much joy, how much delight, how many positive emotions we experience at this moment.
+Even though you understand very well and clearly that to achieve all this, you need to 
+clean everything thoroughly, you need to do a general cleaning, you need to make some efforts. 
+Because you yourself understand very well that it is worth it one hundred percent.
+After all, this is cleanliness, this is our health and that of our loved ones, this is our
+happiness, joy, smiles, a great mood, a sea of ​​positive emotions - all that you cannot buy 
+for any money. And that is why, although sometimes you want to clean everything thoroughly, 
+do a general cleaning. And although you also need to do regular cleaning, but still, if 
+you need and want to clean everything thoroughly, then, unfortunately, very often it 
+does not help and you still want to clean everything thoroughly.
+Because in essence, it is intended only to maintain cleanliness and order, and not to carefully
+instill them.
+And here we will be happy to help you with our Deep Cleaning service.
+While you are at work, while you are doing your business or just relaxing after hard work
+we will thoroughly clean and clean everything, we will do a general and high-quality cleaning 
+of your home.
+Yours will shine with cleanliness like in a fairy tale.
+After all, we are real magicians and sorcerers who do and give real magic and witchcraft of frequency
+and order for you and your home. After all, we try and work only for you, your happiness and health 
+and also for the sake of your well-being. After all, a happy and healthy client and customer who 
+is doing well is our client and our customer. And after all, we work first of all so that our clients 
+and customers are happy and healthy and so that everything is well in their family.
+After all, this is our most important goal and most importantly our happiness and we will do everything 
+for this and for you.
+Sincerely, your Mary Cleaning team.
+                  </section>
+              </section>              
+             <script style="display: none;">
+              const  intSectionDivDeepClean=document.getElementById("intSectionDivDeepClean"),
+              DivDeepCleaningText=document.getElementById('DivDeepCleaningText'),
+              DivHeaderCleaningText=document.getElementById('DivHeaderCleaningText'),
+              imgdeepclean=document.getElementById('imgdeepclean'),
+              intSectionDeepCleanText=document.getElementById('intSectionDeepCleanText'),
+              audioforDeepCleaning=document.getElementById("ModernTalkingWithALittleLove");
+             
+              function clickDeepCleaning () {
+                function showDeepClean (showobject) {
+                  showobject.style.display='flex';
+                  setTimeout (()=>{showobject.classList='show'},1000);                  
+                }
+                document.getElementById("SndEffect").currentTime='0';
+                document.getElementById("SndEffect").pause();
+                showDeepClean(intSectionDivDeepClean);
+                intSectionDivDeepClean.style.flexDirection='column';
+                intSectionDivDeepClean.style.justifyContent='center';
+                intSectionDivDeepClean.style.alignItems='center';
+                intSectionDivDeepClean.style.fontFamily="Roboto";
+                showDeepClean(intSectionDeepCleanText);
+                intSectionDeepCleanText.style.textAlign="center";
+                intSectionDeepCleanText.style.borderRadius="28px";
+                intSectionDeepCleanText.style.borderRadius="28px";
+                intSectionDeepCleanText.style.border="2px solid";
+                intSectionDeepCleanText.style.backgroundColor="white";
+                intSectionDeepCleanText.style.overflow="auto";
+                  const audioplayForDeepCleaning = ()=>{
+                    audioforDeepCleaning.play();
+                    audioforDeepCleaning.addEventListener('ended', function () {
+                        audioforDeepCleaning.currentTime='0';
+                        audioforDeepCleaning.play();
+                    }
+                  );                
+                  };
+                  setTimeout(audioplayForDeepCleaning,1000);   
+                intSectionDivDeepClean.style.transform='translateY(-12vh)';
+                //Створюємо кнопку CLOSE для даної випливаючої секції, що описується за допомогою даного об'єкта intSectionDivDeepClean
+                let CloseBTNButtonDeepCleanSection=document.createElement('button');
+               CloseBTNButtonDeepCleanSection.innerHTML="CLOSE";
+               intSectionDivDeepClean.appendChild(CloseBTNButtonDeepCleanSection);
+               CloseBTNButtonDeepCleanSection.classList='ButtonCloseDeepClean';
+               const CloseThisWindow1= function (event) {
+                    audioforDeepCleaning.currentTime='0';
+                        audioforDeepCleaning.pause();
+                    intSectionDivDeepClean.removeChild(CloseBTNButtonDeepCleanSection);
+                    CloseBTNButtonDeepCleanSection=null;
+                    setTimeout(function () {intSectionDeepCleanText.classList='hide';},1500);
+                    setTimeout(function () {intSectionDeepCleanText.style.display='none';},10000);
+                    setTimeout(function () {intSectionDivDeepClean.classList='hide';},1500);
+                    setTimeout(function () {intSectionDivDeepClean.style.display='none';},10000);
+               };
+            CloseBTNButtonDeepCleanSection.addEventListener('click',CloseThisWindow1);;
+
+              }; //Кінець функції clickDeepCleaning ()
+
+              DivDeepCleaningText.addEventListener('click',clickDeepCleaning);
+              DivHeaderCleaningText.addEventListener('click',clickDeepCleaning);
+              imgdeepclean.addEventListener('click',clickDeepCleaning);
+
+             </script> 
+             
+          </div>  <!-- Кінець контйнеру<div class="Regular-cleaning">-->
+          </section>
+          <!--Кінець даної секції section id="See-the-cleaning"-->
+          <!-- Тут йде наступна секція з текстом та зобраденням дівчини-->  
+            <section id="From-the-Heart-to-Cleanliness"
+             >
+                <div id="From-the-Heart-to-Cleanliness"
+                >
+                  <!-- В цьому контейнері DIV виводиться текст -->
+                    <div id=franchise
+                    >
+                      From the Heart to Cleanliness 💙
+                    </div>
+                    <section id=SectionFromTheHeart >
+                      The story of our company is not just a 
+                      business tale — it’s a real journey of strength, faith, and care.<br>
+                      It all started in the summer of 2022, when Maria — a refugee from Ukraine — 
+                      arrived in Portugal with<br>
+                      nothing but a desire to survive and be useful. 
+                      No connections, no language, no financial safety net…<br>
+                      just a big heart and a willingness to work. She took the first cleaning 
+                      jobs herself — with a mop and <br>
+                      broom in hand. We cleaned everything: dusty apartments, old houses, post-rental messes, and <br>
+                      even abandoned properties untouched for years.<BR>
+                      But everything changed. Soon, like-minded people joined Maria. From just one order per week, we<BR>
+                      grew to dozens every day. Today, our team includes 12 full-time professionals and more than 15<br>
+                      seasonal workers. We clean not only apartments and villas, but also restaurants, offices, and<br>
+                      commercial properties. Yes — even a yacht!
+                    
+                    <button style=
+                     "bottom: 13px; 
+                     background-color: #fff;
+                     width:203px; 
+                     right:541px;
+                     left:0;
+                     top:327px;
+                     display: flex;
+                     border-radius: 28px;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     height:53px;
+                     margin-left:20px">
+                     <div style="font-family: DM Sans;color:#3793A2;
+                     font-weight:600;
+                     font-style: normal;letter-spacing: 0;line-height: 22px;
+                     font-size:16px;
+                     ">
+                       <a style="padding:0;margin:0;text-decoration: none;" href="#service">
+                        more...
+                      </a>
+                     </div> 
+                    </button>
+                  </section>
+                  <script>
+                    const franchise=document.getElementById('franchise');
+                    const SectionFromTheHeart=document.getElementById('SectionFromTheHeart');
+                    if (480>=screen.width) {
+                      franchise.style.marginLeft='0';
+                      franchise.style.width='100vw';
+                      franchise.style.height='10vh';
+                      franchise.style.fontSize='12px';
+                      SectionFromTheHeart.style.display='flex';
+                      SectionFromTheHeart.style.flexDirection='column';
+                      SectionFromTheHeart.style.justifyContent='center';
+                      SectionFromTheHeart.style.alignItems='center';
+                      SectionFromTheHeart.style.textAlign='center';
+                      SectionFromTheHeart.style.color='#3793A2';
+                      SectionFromTheHeart.style.fontSize='12px';
+                    }
+                    else {franchise.style.marginLeft='8px';  
+                    SectionFromTheHeart.style.textAlign='left';
+                      SectionFromTheHeart.style.color='#3793A2';                
+                    }
+                  </script>
+                </div>
+                <div id="ContainerImageMary">
+                  <!-- В цьому контейнрі знаходиться зображення дівчини а також та 
+                   секція, що буде накладена на неї - вона буде відображатися над даним зображенням 
+                   при кліканні на ньому-->
+                <img id=marypng src="/graphics/GirlandWoman/mary.png" alt="mary.png">
+                <section id=marypngsection>
+                  <!-- тут описується секція яка повинна відображатися та відтворюватися
+                   коли виникає подія click в середовищі зображення дівчини, що відтворюється за 
+                   допомогою розташованого вище тега img. В ході її відтворення
+                   відтворюється аудіо і ше одна секція (тобто контейнер DIV), що містить 
+                   текст слідом за якими іде кнопка закриття даної секції при на тисканні на яку 
+                   весь її вміст буде поступово зникати. -->
+
+                   <!-- Це аудіо, що відтворюватиметься при відтворенні даної секції-->
+              <audio id=marypngsectionaudio src="/audio/soft-romantic-folk-melody-flute-331843.mp3"></audio>
+               <!-- Це DIV контейнер який містить текст який буде відтворюватися прі двідтворенні 
+                даної секції-->
+               <div id=marypngsectiontext> 
+              We have thousands of satisfied customers all over the world. 
+              After all, a happy and satisfied customer is the most important thing for us. 
+              Our goal is to make all our customers happy and satisfied.
+              </div>  
+              <!--Кінець  даного контейнера DIV-->
+              <button id="closeBTNmarypngsection">CLOSE</button>
+              </section>
+            <!-- Кінець даної секції section id=marypngsection-->
+            <script >
+              // Даний скріпт формує обробник події  click яка виникає коли ми клікаємо
+              // на даному зображені дівчини, що як об'єкт даної WEB-сторінки має ідентифікатор
+              // marypng. Цей обробник забеспечує відтворення відповідної секції 
+              //<section id=marypngsection> і формує обробник події click яка виникає,
+              // коли ми натискаємо на кнопку CLOSE даної секції, завдяки виконанню якого
+              // дана секція і весь її вміст поступово зникають.
+              // Спочатку отримуємо формуємо об'єктне значення, що описує даний об'єкт
+              // з ідентифікатором marypng який є даним зображенням дівчини, отримуємо його
+              // адресу в пам'яті і заносимо її в змінну sectionmarimage
+              const sectionmarimage=document.getElementById("marypng");
+              if (480>=screen.width) {sectionmarimage.style.marginTop='5vh';sectionmarimage.style.boxShadow='10px 10px 50px 5px #000'; };
+               var sndplay=document.getElementById("marypngsectionaudio");
+              // Тепер формуємо і описуємо подію click для даного об'єкта і формуємо і описуємо
+              // її обробник який спочатку відтворює вміст даної секції з id=marypngsection,
+              //а потім формує обробник події click яка виникає коли ми натискаємо на дану 
+              // кнопку CLOSE даної секції яка як об'єкт HTML має id="closeBTNmarypngsection"
+              sectionmarimage.addEventListener("click" ,function (event) {
+                //Тут ми формуємо об'єктне значення, що описує дану секцію з id=marypngsection,
+                // яка повинна відобразитися поверх даного зображення з дівчиною, формуємо адресу 
+                // даного об'єктного значення в пам'яті і заносимо її в змінну marypngsection
+                const marypngsection=document.getElementById("marypngsection");
+                
+                // Тепер забеспечуємо з затримкою в 5 сек видображення основи даної секції  
+                 marypngsection.style.display="flex";
+                setTimeout (()=>{
+                  marypngsection.classList="show";
+                  marypngsection.style.borderRadius="28px";
+                  marypngsection.style.border="2px solid";
+                },
+                5000);
+               //Готуємо об'єкт для подальшої роботи з головним контейнером з текстом в даної секції  
+                
+                var marypngsectiontext=document.getElementById("marypngsectiontext");
+
+                //Готуємо об'єкт для подальшої роботи з кнопкою CLOSE в даної секції                
+                var closeBTNThisSection=document.getElementById("closeBTNmarypngsection");
+                // Тепер відображаємо головний контент даної секції - контейнер DIV разом
+                // з текстом та дану її кнопку CLOSE.
+                // Спочатку відтворюємо з затримкою в 1 сек даний контейнер DIV з даним її
+                // текстом.
+                marypngsectiontext.style.display="flex";
+                setTimeout(()=>{
+                  
+                  marypngsectiontext.classList="show";
+                },2000);
+                // Тепер також з затримкою в 5 сек відтворюємо дану кнопку CLOSE даної секції
+                  closeBTNThisSection.style.display="flex";
+                  closeBTNThisSection.style.flexDirection="column";
+                  closeBTNThisSection.style.justifyContent="center";
+                  closeBTNThisSection.style.alignItems="center";
+                setTimeout(()=>{
+                 closeBTNThisSection.classList="show";
+                },5000);
+                //Тепер забеспечуємо відтворення фонового аудіо з затримкою 5сек
+                setTimeout(()=>{
+               
+                 sndplay.play();
+                },5000);
+                //Тепер описуємо подію click яка буде виникати при натисканні на дану кнопку 
+                // з ідентифікатором closeBTNmarypngsection даної секції з даним
+                // ідентифікатором id=marypngsection та її обробник, який буде виконуватися
+                // браузером кожного разу при її винекненні який спочатку прибере саму дану кнопку,
+                // потім контейнер DIV даної секції з даним її текстом, потім саму секцію. 
+               closeBTNThisSection.addEventListener("click", function(event)
+              {  
+                sndplay.currentTime=0;
+                sndplay.pause();
+                // С початку с затримкою в 5 сек прибираємо саму дану кнопку.
+                closeBTNThisSection.classList="hide";
+                setTimeout(()=>{
+                  setTimeout(()=>{closeBTNThisSection.style.display="none";},1000);
+                  },
+                9000);
+                //Тепер також з затримкою в 5 сек прибраемо головний DIV контейнер даної секції
+                marypngsectiontext.classList="hide";
+                setTimeout(()=>{                  
+                  marypngsectiontext.style.display="none";                  
+                   },9000
+                 );
+                  //Тепер також з затримкою в 5 сек прибраемо саму даноу секцію
+                 marypngsection.classList="hide";
+                 setTimeout (()=>{
+                  
+                   marypngsection.style.display="none";
+                },
+                9000);
+                
+               
+                }
+               );
+              }
+             );
+              
+            </script>
+        </div>
+              </section>
+                <!-- В наступній секції іде розповідь про надаваємі послуги рззом з картинками-->
+            <section id=service>
+                <!-- Дана секція починаєтьс з наступної секції з надписом SERVICE, 
+                 що розташовується по центру базовій секції 
+                 За нею іде наступна секція в якій розташовуються три контейнери DIV 
+                 в кожному з яких описується певна надаваєма послуга та наводиться
+                 її зображення.-->
+                 <section style="
+                 font-family: ABeeZee;
+                 font-size:14px;
+                 font-weight: 500;
+                 line-height: 29px;
+                 letter-spacing:4px;
+                 color:#000;
+                 margin:0;
+                 padding:0;
+                 padding-bottom: 61px;">SERVICE</section>
+             <!-- Кінець даної секції з надписом SERVICE, 
+                 що розташовується по центру базовій секції 
+                 Далі за нею іде наступна секція в якій розташовуються три контейнери DIV 
+                 в кожному з яких описується певна надаваєма послуга та наводиться
+                 її зображення.-->
+             <section id=descrservice>
+             <!--Це секція в якій розташовуються три контейнери DIV 
+                 в кожному з яких описується певна надаваєма послуга та наводиться
+                 її зображення і надається можливість обчислити її вартість за допомогою
+                 відповідної кнопки.-->
+                 <div class=descrservicefirstcontainer >
+                   <img id=imgpropertymngmpng
+                     
+                   src="/graphics/propertymngm/propertymngm.png" alt="propertymngm.png">
+                   <div id=Propertymanagement>
+                    Property <br>
+                    management                     
+                   </div> <!--Кінець контейнера div id=Propertymanagement-->
+                   <div id=divfirstblock>
+                      Order at home – success in life!<br>
+                      Regular cleaning without hassle<br>
+                      helps you enjoy cleanliness and<br>
+                      comfort every day. Free up your<br>
+                      time for important things while<br>
+                      we take care of your home.<BR>Сlick here to learn more.
+                   </div> <!--Кінець контейнера div id=divfirstblock-->
+                   <button id=servicebuttom> Free quote >></button>
+                   <section id=descrservicepopupsection>
+                     <section id="sectiondescrservicepopupsectiontext">
+                        <h1 id="headerPropertyManagement">Property management</h1>
+                    <div id=descrservicepopupsectiontext>
+                        We all love to be the masters of our house, the masters of our lives.
+                        We all love to plan everything, organize everything, do everything on time.
+                        After all, when we plan everything in advance, organize everything, do everything on time - we are
+                        truly happy, smiling and healthy people.
+                        After all, this is the true harmony of happiness, charm, beauty, and joy of our whole life.
+                        When you have complete order and order in our affairs - we are the happiest people in the whole world.
+                        Because order and order in our life are the true happiness and harmony of our life;
+                        this is what makes us happy, cheerful and healthy.
+                        As, in fact, order in our home.
+                        And we will be happy to help you put your affairs in order, plan them,
+                        make sure that you have time for everything and will be happy to help you put your home and
+                        your home in order.
+                        In your home, in your home, in your heart and in your soul, cleanliness, order and order will reign.
+                        After all, we are real sorcerers and magicians who create real magic and witchcraft, a real fairy tale of cleanliness,
+                        order and order.
+                        And for us, it is very great happiness, joy and satisfaction when all our clients and customers are
+                        happy, smiling and, most importantly, healthy and full of strength and health people.
+                        This is what makes us and our entire team truly happy and cheerful people.
+                    </div>
+                    <button id="descrservicepopupsectionclosebtn">CLOSE</button>
+                  <script style="display:none;">
+                      let imgpropertymngmpng=document.getElementById('imgpropertymngmpng');
+                      imgpropertymngmpng.addEventListener('click',popupsection);
+                      let Propertymanagement=document.getElementById('Propertymanagement');
+                       Propertymanagement.addEventListener('click',popupsection);
+                       let divfirstblock=document.getElementById('divfirstblock');
+                      divfirstblock.addEventListener('click',popupsection);
+                      function popupsection () {
+                          let SndEffect=document.getElementById("SndEffect");
+                          SndEffect.currentTime='0';
+                          SndEffect.pause();
+                          let  audioProffessional=document.getElementById("professionalsnd");
+                          audioProffessional.currentTime='0';
+                          audioProffessional.play();
+                          audioProffessional.addEventListener ("ended", ()=>{
+                               audioProffessional.currentTime='0';
+                               audioProffessional.play();
+                          }
+                        );
+                    //Функція для відображення конкретного об'єкту в даному черговому випливаючому вікні  
+                      function showObject(ObjectForShow,zatrymka){
+                        //Присвоюємо даному об'єкту що задається даним параметром-значенням ObjectForShow
+                        // статус flex-контейнера для  його початкового відображення
+                        ObjectForShow.style.display='flex';
+                        //Про всяк випадок знищуємо його класи, щоб гарантувати надалі його коректне відображення
+                       ObjectForShow.classList='';
+                       // С затримкою, що визначається даним параметром-значенням zatrymka 
+                       // присвоюємо даному об'єкту клас show для його повноцінного відображення
+                       setTimeout(function() {
+                       ObjectForShow.classList.add("show");
+                       },zatrymka
+                      );
+                      }
+                      // Відображаємо перше і головне спливаюче вікно в даної секції
+                      let descrservicepopupsection=document.getElementById ("descrservicepopupsection");
+                      showObject(descrservicepopupsection,1000); 
+                      // Відображаємо відображаємо в ньому жаний його заголовок
+                       let headerPropertyManagement=document.getElementById("headerPropertyManagement");
+                       showObject(headerPropertyManagement,2000);
+                       //Відображаємо в середині даного вікна даної секції ще одне вікно ще з однією
+                      //  ще з однією секцією, що містить контейнер з головним текстом даного вікна
+                     let sectiondescrservicepopupsectiontext=document.getElementById('sectiondescrservicepopupsectiontext');
+                       showObject(sectiondescrservicepopupsectiontext,3000);
+                       //Відображаємо в середині нього контейнер  його головним текстом всієї даної головної секції
+                       let descrservicepopupsectiontext=document.getElementById ("descrservicepopupsectiontext");
+                        showObject(descrservicepopupsectiontext,4000);
+                      // Відображаємо в середині нього кнопку його закриття
+                      let descrservicepopupsectionclosebtn=document.getElementById ("descrservicepopupsectionclosebtn");
+                      showObject(descrservicepopupsectionclosebtn,4000);
+                          console.log("Скрипт виконано!");
+                          descrservicepopupsectionclosebtn.addEventListener("click",
+                          ()=>  {
+                          audioProffessional.currentTime='0';
+                          audioProffessional.pause();
+                          hideObject(headerPropertyManagement,2000);
+                          hideObject(descrservicepopupsectionclosebtn,2000);   
+                          hideObject(descrservicepopupsectiontext,2000);
+                          hideObject(sectiondescrservicepopupsectiontext,2000);
+                          hideObject(descrservicepopupsection,2000);
+                          }
+                       );
+                       function hideObject(hideElement,zatrymka) {
+                        setTimeout(()=>{hideElement.classList.add("hide");},1500);
+                        setTimeout(()=>{hideElement.style.display='none';},zatrymka);
+                       };
+                      }
+                      
+                  </script> 
+                </section>
+                  <!--Кінець секції <section id="sectiondescrservicepopupsectiontext">-->
+              </section>
+              <!-- кінець секції <section id=descrservicepopupsection>-->
+                </div>
+                <!--Кінець першого контейнера div class=descrservicefirstcontainer-->
+
+                <div class=descrservicefirstcontainer >
+                 <img src="/graphics/laundry/laundry.png" 
+                    style="/*box-shadow:5px 5px 100px 20px#8A898E;*/
+                    position:absolute;
+                    bottom: 380px; 
+                    left:55px;
+                    right: 55px;
+                    border-radius:10px;" 
+                    alt="laundry.png"> 
+                    <div id=Laundry>
+                      Laundry                   
+                     </div> <!--Кінець контейнера div id=Laundry-->
+                     <div 
+                       id=divsecondandthridblock 
+                     > 
+                      
+                     Lorem ipsum dolor sit amet,<BR>
+                        consectetur adipiscing elit.<BR>
+                        Quisque dui mi, bibendum eu<BR>
+                        erat id, ultricies semper metus.<BR> 
+                        Nunc dapibus laoreet dolor nec<BR>imperdiet.
+                        </div> <!--Кінець контейнера div id=divsecondandthridblock--> 
+                        <button 
+                          
+                          id=servicebuttom1> 
+                          Free quote >>
+                        </button>
+                     
+                 
+                    </div><!--Кінець другого контейнера class id=descrservicefirstcontainer-->
+
+                 <div class=descrservicefirstcontainer>
+                  <img src="/graphics/moveinout/moveinout .png" 
+                  style="position:absolute;
+                    bottom: 380px; left:79px;right: 79px;
+                    border-radius: 10px;
+                   /* box-shadow:5px 5px 100px 20px#8A898E;*/" 
+                    alt="moveinout.png">
+                    <div id=MoveInoutCleaning>Move in/out<br>
+                      cleaning</div>
+                      
+                    <div 
+                      id=divsecondandthridblock 
+                      > 
+                     
+                      Lorem ipsum dolor sit amet,<BR>
+                        consectetur adipiscing elit.<BR>
+                        Quisque dui mi, bibendum eu<BR>erat id, ultricies semper metus.<BR>
+                        Nunc dapibus laoreet dolor nec<BR>imperdiet.
+                       </div> <!--Кінець контейнера div id=divsecondandthridblock--> 
+                       <button 
+                        
+                         id=servicebuttom2> 
+                         Free quote >>
+                       </button>
+                </div>
+                <script style="display:0;">
+                  const descrservice=document.getElementById('descrservice');
+                  if (480>=screen.width) {descrservice.style.flexDirection='column';descrservice.style.marginTop='5vh';
+                }
+                </script>
+              </section>  <!--Кінець секції section id=descrservice -->    
+          </section> <!--Кінець секції section id=service -->
+          <section id=aboutus>
+              <div id=FirstDivAboutUs>
+                  <section id=TESTMONIALS>
+                    TESTMONIALS
+                  </section>
+                  <section id=WhatClientsSayAboutUs>What Clients say about us</section>
+              </div>
+              <div id=SecondDivAboutUsExt>
+                <!-- Цей контейнер містить в собі контейнер div id=SecondDivAboutUsInt з коментарями,
+                 зображеннями іменами та призвищами користувачів та секцію Why Choose Us? у вигляді відповідної секції.
+                 Далі за ним йде розділ з описом команди Mary Cleaning -->
+                <div id=SecondDivAboutUsInt>
+                   <!-- В даному контейнері div містяться зображення, ім'я та призвища двох користувачів 
+                    Olivier Rouquairol і Jana Cmutnova та їх коментарі про якість сервісу Mary Cleaning
+                    -->
+                  <div id=OlivierRouquairolExt>
+                    <!-- В даному контейнері div id=OlivierRouquairolExt міститься контейнер 
+                     div id=OlivierRouquairolInt в якому міститься фото і ім'я користувача 
+                     olivier rouquairol а сусідньому з ним контейнері div id=TextCommentarOlivierRouquairol
+                     його коментар з думкою про якість послуг даного сервісу Mary Cleaning-->
+                      <div id=OlivierRouquairolInt>
+                        <img id=MarriedСouple src="/graphics/olivier rouquairol/olivier rouquairol.png" width=90 height=90 alt="MarriedСouple.png">
+                        <section id=OlivierRouquairol 
+                          style="text-transform: uppercase;">
+                        <!-- В даній секції section id=OlivierRouquairol виводиться текст
+                          olivier rouquairol.
+                          Ввиду того, що даний текст, що міститься  в даній секції
+                          потрібно виводити пропісними літерами для даної секції була застосована 
+                          властивість text-transform: uppercase. Але при використанні даної 
+                          властивості чомусь дуже виникають переноси рядка як це було в даному випадку.
+                          І щоб запобігти цьому я заточив весь джаний текст даної секції в контейнер
+                          <nobr> </nobr>.-->
+                          <nobr id=olivierr>
+                            olivier rouquairol
+                          </nobr>
+                        </section>
+                      </div>
+                    <!--Кінець контейнеру id=OlivierRouquairolInt 
+                        що розташований в середені даного контейнеру id=OlivierRouquairolExt-->
+                    <div id=TextCommentar 
+                         >
+                      Mary and her team have been in<br>
+                      charge of cleaning my hotel<br>
+                      establishment for several months.<br>
+                      I am lucky to have found a<br>
+                      professional team, responsive,<br>
+                      punctual and charging reasonable<br>
+                      prices.<BR>
+                      I am a professional in tourist<br>
+                      accommodation and I needed a<br>
+                      team of professional cleaning people,<br>
+                      our collaboration is perfect.<br>
+                      I highly recommend...
+                    </div>
+                    <!--Кінець даного контейнеру div id=TextCommentar,
+                       що розташований в середені даного контейнеру id=OlivierRouquairolExt-->
+                   </div>
+                <!--Кінець контейнеру id=OlivierRouquairolExt -->
+                <section id=JanaCmuntova>
+                    <!-- В Цій секції  section id=JanaСmuntova міститься коментар, зображення
+                     та ім'я користувача JanaСmuntova-->
+                    <div  id=JanaCmutnovaPhotoAndNameWithFamily>
+                      <!--В цьому контейнері div id=JanaCmutnovaPhotoAndNameWithFamily
+                      знаходиться світлина а також ім'я та призвище користувача jana cmuntova.
+                      При цьому ім'я та призвище даного користувача оформлено у вигляді 
+                      секції section id=JanaSmutnovaNameWithFamily-->
+                      <img id=ImgJanaCmutnova 
+                       src="/graphics/jana_cmuntova/jana_cmuntova.png" alt="jana_cmuntova.png">
+                      <section id=JanaCmutnovaNameWithFamily>
+                        <!-- В даній секції section JanaCmutnovaNameWithFamily виводиться текст
+                          jana cmuntova.
+                          Ввиду того, що даний текст, що міститься  в даній секції
+                          потрібно виводити пропісними літерами для даної секції була застосована 
+                          властивість text-transform: uppercase. Але при використанні даної 
+                          властивості чомусь дуже виникають переноси рядка як це було в даному випадку.
+                          І щоб запобігти цьому я заточив весь джаний текст даної секції в контейнер
+                          <nobr> </nobr>.--> 
+                         <nobr id=janac>
+                          jana cmuntova
+                         </nobr>
+                              
+                      </section>
+                      <!-- Кінець даної секції section id=JanaСmutnova -->
+                    </div>
+                   <section id=JanaCmutnovacCommentar>
+                    I am super happy with work of Mary<BR>
+                      and her team. The cleaning is always<BR>
+                      perfect and I can highly<BR>
+                      recommend Mary Cleaning to<BR>
+                      everyone. Whether you professional<BR>
+                      accommodation provider or private<BR>
+                      person with high demands.<BR>
+                      I am sure you will be happy same as<BR>
+                      I am.
+                   </section>
+                </section>
+                  <!-- Кінець даної секції section id=JanaSmutnovaNameWithFamily -->
+              </div>
+              <!--Кінець контейнеру id=SecondDivAboutUsInt -->            
+            </div>
+            <script style='display:none'>
+              if (480>=screen.width) document.getElementById('aboutus').style.boxShadow='10px 10px 50px 5px #000';
+            </script>
+          </section>
+          <!--Кінець даної секції section id=aboutus-->
+          <section id=WhyChooseUs>
+              <!-- Тут розташований розділ Why Choose Us.
+               Він розташований в даній секції section id=WhyChooseUs.
+               В ньому на фоні відповідного фонового зображення з авто, зі стиральною
+               машиною, з зображенням людей, знаку якості тощо відображається розділ з надписами
+               TESTMONIALS і Why Choose Us? який в свою чергу реалізується за допомогою вкладеного
+               контейнера <div id=WhyChooseUsTextExt>. Також до складу даного розділу і, відповідно,
+                до даної секції входить розташований в секції section id=aboutcommand, яка, іде
+                слідом за контейнером  <div id=WhyChooseUsTextExt>
+                    <div id=WhyChooseUsTextTESTMONIALS>TESTMONIALS</div>
+                    <div id=WhyChooseUsTextInt>Why Choose Us?</div> 
+                  </div> за допомогою якого 
+                відображається надписи TESTMONIALS і Why Choose Us? 
+                розділ з описом команди Mary Cleaning який розташовується в секції
+                  <section id=aboutcommand> </section>-->
+               
+                  <div id=WhyChooseUsTextExt>
+                    <div id=WhyChooseUsTextTESTMONIALS>TESTMONIALS</div>
+                    <div id=WhyChooseUsTextInt>Why Choose Us?</div> 
+                  </div>
+                    <!--Кінець контейнеру <div id=WhyChooseUsTextExt>. 
+                    Далі за ним йде розділ з описом команди 
+                    Mary Cleaning. Він реалізується у вигляді секці section id=aboutcommand-->
+                    <section id=aboutcommand>
+                      <!-- В даній секції <section id=aboutcommand> 
+                        розташовані спочатку два контейнери DIV за дапомогою яких 
+                        виводяться надписи OUR TEAM (за це відповідає контейнер 
+                        <div id=OURTEAMinscription>OUR TEAM</div>) і  Meet The Team (за це відповідає контейнер 
+                        <div id=MeetTheTeaminscription>Meet The Team</div>).
+                        Далі за даними контейнерами іде розділ з фотографіями, іменами та призвищами 
+                        та контактами в соціальних мережах вже безпосередньо участників 
+                        команди -->
+                        <div id=OURTEAMinscription>OUR TEAM</div>
+                        <div id=MeetTheTeaminscription>Meet The Team</div>
+                        <!-- #region tabel-->
+                        <table id=memmberofteam cellspacing=29 celpadding=0>
+                          <tbody id=tabledata>
+                          <tr class=trtabledata><!--class=trtabledata-->
+                            <TD id=memmberofteamcells>
+                              <section id=celldata>
+                                <img src="/graphics/Command/AnnandMariya/AnnaandMariya.png" height=77 width=77 alt="Anna.png">
+                               <!-- #region table_first_cell -->
+                                <table id=tablememberofcommand>
+                                  <tbody id=tbodyablememberofcommand>
+                                    <TR style="margin: inherit; width:inherit; height:inherit; padding:inherit">
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <a href="https://x.com/MaryAnnsCleanin/" target="_blank">
+                                              <img src="/graphics/Social Network/twitter.png" alt="twitter.png">
+                                            </a>
+                                           </div>
+                                        </td>
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <A href="https://www.facebook.com/groups/1488561904790779/" target="_blank">
+                                              <img src="/graphics/Social Network/fa-facebook-square.png"alt="fa-facebook-square.png">
+                                            </A>
+                                          </div>
+                                        </td>
+                                          <td id=celltablememberofcommand>
+                                            <div id=ContainerDivCellTableMemberOfCommand>
+                                              <A href="https://www.linkedin.com/company/mary-cleaning/posts/?feedView=all" target="_blank">         
+                                                <img src="/graphics/Social Network/linkedin.png" alt="linkedin.png">
+                                              </A>
+                                            </div>
+                                          </td>
+                                    </TR>
+                                  </tbody>
+                                </table>
+                                <!-- #endregion -->
+                                <section id=Teammembers>
+                                    Anna
+                                </section>
+                              </section>
+                            </TD>
+                            <TD id=memmberofteamcells> 
+                              <section id="celldata">
+                                <img src="/graphics/Command/AnnandMariya/AnnaandMariya.png" height=77 width=77 alt="Anna.png">
+                                <!--#region secondtablememberofcommand-->
+                                <table id=tablememberofcommand>
+                                  <tbody id=tbodyablememberofcommand>
+                                    <TR style="margin: inherit; width:inherit; height:inherit; padding:inherit">
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <a href="https://x.com/MaryAnnsCleanin/" target="_blank">
+                                              <img src="/graphics/Social Network/twitter.png" alt="twitter.png">
+                                            </a>
+                                           </div>
+                                        </td>
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <A href="https://www.facebook.com/groups/1488561904790779/" target="_blank">
+                                              <img src="/graphics/Social Network/fa-facebook-square.png"alt="fa-facebook-square.png">
+                                            </A>
+                                          </div>
+                                        </td>
+                                          <td id=celltablememberofcommand>
+                                            <div id=ContainerDivCellTableMemberOfCommand>
+                                              <A href="https://www.linkedin.com/company/mary-cleaning/posts/?feedView=all" target="_blank">         
+                                                <img src="/graphics/Social Network/linkedin.png" alt="linkedin.png">
+                                              </A>
+                                            </div>
+                                          </td>
+                                    </TR>
+                                  </tbody>
+                                </table>
+                                <!-- #endregion -->
+                                <section id=Teammembers>
+                                  Mariya
+                                </section>
+                              </section>
+                            </TD>
+                            <TD id=memmberofteamcells> 
+                              <section id="celldata">
+                                <img src="/graphics/Command/NataliaandVera/NataliaandVera.png" height=77 width=77 alt="NataliaandVera.png">
+                              <!--#region thridtablememberofcommand-->
+                                <table id=tablememberofcommand>
+                                  <tbody id=tbodyablememberofcommand>
+                                    <TR style="margin: inherit; width:inherit; height:inherit; padding:inherit">
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <a href="https://x.com/MaryAnnsCleanin/" target="_blank">
+                                              <img src="/graphics/Social Network/twitter.png" alt="twitter.png">
+                                            </a>
+                                           </div>
+                                        </td>
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <A href="https://www.facebook.com/groups/1488561904790779/" target="_blank">
+                                              <img src="/graphics/Social Network/fa-facebook-square.png"alt="fa-facebook-square.png">
+                                            </A>
+                                          </div>
+                                        </td>
+                                          <td id=celltablememberofcommand>
+                                            <div id=ContainerDivCellTableMemberOfCommand>
+                                              <A href="https://www.linkedin.com/company/mary-cleaning/posts/?feedView=all" target="_blank">         
+                                                <img src="/graphics/Social Network/linkedin.png" alt="linkedin.png">
+                                              </A>
+                                            </div>
+                                          </td>
+                                    </TR>
+                                  </tbody>
+                                </table>
+                                <!-- #endregion -->
+                                <section id=Teammembers>
+                                  Natalia
+                                </section>
+                              </section>
+                            </TD>
+                            <TD id=memmberofteamcells> 
+                              <section id="celldata">
+                                <img src="/graphics/Command/NataliaandVera/NataliaandVera.png" height=77 width=77 alt="NataliaandVera.png">
+                               <!--#region fourstablememberofcommand--> 
+                                <table id=tablememberofcommand>
+                                  <tbody id=tbodyablememberofcommand>
+                                    <TR style="margin: inherit; width:inherit; height:inherit; padding:inherit">
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <a href="https://x.com/MaryAnnsCleanin/" target="_blank">
+                                              <img src="/graphics/Social Network/twitter.png" alt="twitter.png">
+                                            </a>
+                                           </div>
+                                        </td>
+                                        <td id=celltablememberofcommand>
+                                          <div id=ContainerDivCellTableMemberOfCommand>
+                                            <A href="https://www.facebook.com/groups/1488561904790779/" target="_blank">
+                                              <img src="/graphics/Social Network/fa-facebook-square.png"alt="fa-facebook-square.png">
+                                            </A>
+                                          </div>
+                                        </td>
+                                          <td id=celltablememberofcommand>
+                                            <div id=ContainerDivCellTableMemberOfCommand>
+                                              <A href="https://www.linkedin.com/company/mary-cleaning/posts/?feedView=all" target="_blank">         
+                                                <img src="/graphics/Social Network/linkedin.png" alt="linkedin.png">
+                                              </A>
+                                            </div>
+                                          </td>
+                                    </TR>
+                                  </tbody>
+                                </table>
+                                <!--#endregion-->
+                                <section id=Teammembers>
+                                  Vera
+                                </section>
+                              </section>
+                            </TD>                              
+                          </tr>
+                        </tbody>
+                      </table>
+                    <!--#endregion-->
+                    
+                    </section> 
+                    <!--Кінець даної секції <section id=aboutcommand>.  -->
+            </section>
+            <!--Кінець даної секції <section id=WhyChooseUs>.  -->
+       
+        <!--#endregion--> 
+       
+      </MAIN>
+      <!--Тут починається footer - підвал даної WEB-сторінки
+      В ньому пристутній текст  OUR TEAM якій формується за допомогою  секції 
+      <section id=SectionOurTeaminFooter>
+        OUR TEAM
+      </section>, текст  The Best Cleaning company, Algarve, який формується за допомогою
+      секції 
+      <section id=TheBestCleaningCompanyAlgarve>
+          The Best Cleaning company, Algarve
+    </section>.
+    Також тут пристутня секція <section id=LuxuryCleanStressFreeLife> в якій за допомогою 
+      відповідних контейнерів <div> формуються два наступних текста - 
+        Luxury Clean, Stress-Free Life! і
+        Book your professional cleaning today and enjoy a spotless home!<BR>
+          Fast / Reliable / 100% Satisfaction Guaranteed.
+          Далі в середені даної секції формуєсться таблиця <table id=contacts width=888>
+          за допомогою якої формується зображення конверта листа і форма за допмогою якої
+          користувач може ввести адресу своєї електронної пошти і підписатися на відповідну 
+          розсилку.
+      -->
+ <footer id=footerpage>
+    <!--В наступних двох секціях формується текст 
+                       OUR TEAM і 
+                       The Best Cleaning company, Algarve   -->
+      <section id=SectionOurTeaminFooter>
+        OUR TEAM
+      </section>
+      <section id=TheBestCleaningCompanyAlgarve>
+          The Best Cleaning company, Algarve
+    </section>
+  <section id=LuxuryCleanStressFreeLife>
+      <div id=LuxuryCleanStressFreeLifeText>
+        
+        <!-- Тут формується текст
+         Luxury Clean, Stress-Free Life!
+         Book your professional cleaning today and enjoy a spotless home!<BR>
+          Fast / Reliable / 100% Satisfaction Guaranteed-->
+
+         <div id=LuxuryCleanStressFreeLifeHeader> 
+            Luxury Clean, Stress-Free Life!
+         </div>
+         Book your professional cleaning today and enjoy a spotless home!<BR>
+          Fast / Reliable / 100% Satisfaction Guaranteed
+      </div>
+            
+      <table id=contacts  >
+        <!--Тут формуєсться таблиця <table id=contacts width=888>
+        за допомогою якої формується зображення конверта листа і форма за допомогою якої
+        користувач може ввести адресу своєї електронної пошти і підписатися на відповідну 
+        розсилку.-->
+        <tbody>
+          <TR id="TRiTablesWithIDContacs">
+            <TD id=TablesWithIDContacsimgemail>
+              <!-- В цій клітинці поточної таблиці формується зображення конверта листа -->
+              <div id=CellTablesWithIDContacs>
+                <img src="/graphics/Email/Email.png" width=164 height=144 alt="Email.png"><!--<br>;-->
+              </div>
+            </TD>
+            <TD id=TablesWithIDContacs > <!--width=700 height=172 valign=TOP-->
+             <!-- В цій клітинці поточної таблиці формується форма за допомогою якої
+              користувач може ввести адресу своєї електронної пошти і підписатися на відповідну 
+              розсилку.-->
+              <FORM id=EMAIL action="/CSS/email.js"
+              method=GET>
+                <input type=TEXT NAME=EMAIL 
+                value="Enter your e-mail" id=TypeEMAIL
+                >
+                <SECTION id=FormEmailSubmit>
+                 <input type=SUBMIT value="Subscribe Our" id=SubscribeOurBTN              
+                 >
+                  <input type=HIDDEN name=reservcopyform value="c3576-236-213">
+              </SECTION>
+              </FORM>
+            </TD>
+          </TR>
+        </tbody>
+   
+      </table>
+     <!--Кінець таблиці <table id=contacts width=888> -->
+      <section id=footerbottom>
+        <!-- Тут формується найнижча частина футера - підвала сторінки-->
+          <section id="logoandcopiright">
+            <img id=Epixelab src="/graphics/Epixelab/Logo.png" alt="Logo Epixelab">
+          
+            <div id=DivCopyright>&copy;2020 Epixelab&reg;. All rights reserved.</div> 
+          </section>
+          <div id=Linksfooterbottom>
+             <section id=Portfolio>
+               <A id=sectionportfoliolink href="#sectionportfolio">Portfolio</A> 
+            </section>
+             <section id=HowitWorks>
+                <!--See-the-cleaning1  -->
+              <a id=howitworklink href="#HowITWork1">
+                How it Works</a>
+            </section>
+            <script>
+              const howitworklink=document.getElementById("howitworklink");
+              function howitworklinkaudio() { 
+                document.getElementById('SndEffect').currentTime="0";
+                document.getElementById('SndEffect').pause();
+                document.getElementById('HowITWorkAudio').currentTime="0"; document.getElementById('HowITWorkAudio').play();
+                document.getElementById('HowITWorkAudio').addEventListener("ended", function () {
+                  document.getElementById('HowITWorkAudio').currentTime="0"; document.getElementById('HowITWorkAudio').play();
+                }
+              );
+              };
+              howitworklink.addEventListener("click",
+                howitworklinkaudio
+              );
+            </script>
+             <section id=Pricing style="margin-right:2px;">
+                Pricing
+            </section>
+             <section id=About style="margin-right:2px;">
+                <A class=linkaboutcompany href="#aboutcompany">About</A>
+            </section>
+             <section id=Login>
+              <a href="#userlogin">
+                 Login
+                </a>
+                <script style="display:none">
+                  document.getElementsByClassName("linkaboutcompany")[0].addEventListener("click",
+                    function (event) {
+                      document.getElementById('SndEffect').currentTime="0";
+                      document.getElementById('SndEffect').pause();
+                      let Lonelinessaudio= document.getElementById("Lonelinessaudio");
+                      Lonelinessaudio.currentTime="0";
+                      Lonelinessaudio.play(); 
+                      Lonelinessaudio.addEventListener("ended", (event)=>{
+                         Lonelinessaudio.currentTime="0";
+                         Lonelinessaudio.play(0); 
+                      });
+                    }
+                  );
+                </script>
+            </section>
+            <section>
+              <A href="#starthtml">Home</A>
+            </section> 
+          </div>
+          <script style="display:none">
+
+            const sectionportfoliolink=document.getElementById('sectionportfoliolink');
+            let sectionportfoliofuntion = function () {
+              document.getElementById('SndEffect').currentTime="0";
+              document.getElementById('SndEffect').pause();
+              let audioforsectionportfolio=document.getElementById('audioforsectionportfoliolink');
+              audioforsectionportfolio.currentTime='0';audioforsectionportfolio.play();
+              audioforsectionportfolio.addEventListener('ended', ()=>{
+                audioforsectionportfolio.currentTime='0';audioforsectionportfolio.play();
+              }
+            );
+            //console.log('Обробник виконано');
+            };
+            
+              sectionportfoliolink.addEventListener('click',sectionportfoliofuntion);
+
+          </script>
+      </section>
+      <!--Кінець секції section id=footerbottom-->
+    <section id=AboutTheDevelopersOfThisWebPage> 
+    <a href="#AboutTheDevolopers">
+      About the developers of this web page
+      </a>
+    </section> 
+    <script>
+      document.getElementById("AboutTheDevelopersOfThisWebPage").addEventListener("click",
+        function (event) {
+          let chervonaKalinaSndEffect=document.getElementById("SndEffect");
+          chervonaKalinaSndEffect.currentTime="0";
+          chervonaKalinaSndEffect.pause();
+
+          let professionalsnd=document.getElementById("professionalsnd");
+          professionalsnd.currentTime="0";
+          professionalsnd.play();
+          professionalsnd.addEventListener("ended", (event)=>{
+            professionalsnd.currentTime="0";
+            professionalsnd.play();
+          }        
+        );
+        }
+      );
+    </script>
+  <div id=AboutTheDevolopers>
+       <div style=
+           "width:80%; 
+            display:flex;
+            flex-direction: row-reverse; 
+            justify-content: flex-start;">
+         <A href="#Linksfooterbottom">
+          <img src="/graphics/Iconly/Icon-Close.png" alt="Icon-Close" class="IconClosePng"></A>
+        <script style="display: none;">
+          document.querySelectorAll(".IconClosePng")[0].addEventListener("click",
+          function (event) {
+            let professionalsnd=document.getElementById("professionalsnd");
+            professionalsnd.currentTime="0";professionalsnd.pause();
+          }
+          );
+        </script>
+        </div>
+          <div id=TextAboutTheDevolopers>
+              The author and developer of this website is Alexey Smirnov.
+The author of the design of this website is Epixelab.
+The author in no way claims the copyright of the company Epixelab regarding the design of this page and has no desire to appropriate someone else's idea because he sincerely believes that
+this is not honest and cannot be done (and, accordingly, he does not do so).
+But at the same time, the author has somewhat improved the design of this page -
+added beautiful shadow framing, beautiful coloring,
+beautiful rounding of objects, added certain pop-up windows that
+appear when clicking on certain links located in the footer of this page, added a reaction when clicking buttons and when placing the mouse pointer on its pictures.
+At the same time, he also adapted its design as best he could for mobile
+devices with a screen width of 900 pixels and tested the rendering of this page for adequacy on his smartphone.
+The author's goal is just to declare himself,
+show his capabilities and create.
+The author does not need anyone else's, but he will not allow anyone to offend him either.
+At the same time, he is always open to dialogue and offers everyone who wants mutually beneficial cooperation.
+With respect, the author of this page is Alexey Smirnov.
+Telegram - @speccomp47, Viber and WhatsApp - +380682190314 (this is also the author's mobile phone number for cooperation).
+I invite everyone for mutually beneficial cooperation.
+With respect, Alexey Smirnov.<br>
+Автор і розробник даної WEB-сторінки - Олексій Смірнов.
+Автор дизайну даної WEB-сторінки - компанія Epixelab.
+Автор в жодному разі не претендує авторські права компанії
+Epixelab щодо дизайну даної сторінки і немає жодного бажання привласнювати собі чужу ідею тому що він щиро вважає що 
+так не чесно і так вчиняти не можна (і, відповідно, він так не вчиняє).
+Але разом з тим автор дещо покращив дизайн даної сторінки - 
+додав красиве офрмлення тінями, красиве забарвлення, 
+красиве скруглення об' єктів, додав певні спливаючі вікна які
+з' являються при натисканні на певні посилання, що розташовані в підвалі даної сторінки, додав реакцію при натисканні кнопок та при встановлення вказника миши на її малюнках.
+При цьому, він ще адаптував як міг її дизайн для мобільних
+пристроїв з шириною екрану в 900 пікселів і протестував відптвоерення даної сторінки на адекватність на своему смартфоні.
+Мета яку переслідує автор - це всього лише заявити про себе, 
+показати свої можливостіі творити.
+Автору чужого не потрібне але й себе він образити нікому не
+дозволить.
+Разом с тим він завжди відкритий до діалогу і пропонує всім охочим взаїмовигідну співпрацю.
+З повагою, автор даної сторінки - Олексій Смірнов.
+Telegram - @speccomp47, Viber і WhatsApp - +380682190314 (це також номер мобільного телефону автора для співпраці).
+Запрошую всіх охочих для взаїмовигідної співпраці.
+З повагою Олексій Смірнов.  
+          </div>
+  </div> 
+  </section>
+ <!-- Кінець секції section id=LuxuryCleanStressFreeLife -->
+    
+     </footer>
+     <!--Кінець footer - підвала сторінки -->
+    <section id=userlogin>
+      <div style=
+           "width:80%; 
+            display:flex;
+            flex-direction: row-reverse; 
+            justify-content: flex-start;">
+         <A href="#Linksfooterbottom">
+          <img src="/graphics/Iconly/Icon-Close.png" alt="Icon-Close"></A>
+      </div>
+      <form id=UserLoginForm action="/CSS/email.j" methode=GET>
+          <img src="/graphics/Enter to system/Enter to system.jpg" alt="">
+          Enter your login
+        <input type=TEXT name=UserLogin value="Enter your login" id=IDUserLogin>
+           Enter your password
+        <input type=PASSWORD name=UserPassword value="" id=IDUserPassword>
+        <input id=SUBMITBUTTOM type="SUBMIT" name=valuebuttom value="LOGIN">
+      </form>
+      
+      </section>
+   <section id=aboutcompany>
+        <div style=
+        "width:80%; 
+         display:flex;
+         flex-direction: row-reverse; 
+         justify-content: flex-start;" id=CloseFormAboutCompany>
+      <A href="#Linksfooterbottom" id=LinksCloseSectionAboutCompany>
+       <img id=ImageCloseSectionAboutCompany src="/graphics/Iconly/Icon-Close.png" alt="Icon-Close">
+      <script style="display:none">
+        document.getElementById("ImageCloseSectionAboutCompany").addEventListener("click"
+          ,function (event) {
+               let Lonelinessaudio= document.getElementById("Lonelinessaudio");
+                   Lonelinessaudio.currentTime="0";
+                   Lonelinessaudio.pause();
+          }
+        );
+      </script>
+      </A>
+     </div>
+     <section id=TextAboutCompany>
+        <div id=DivTextAboutCompany > From the Heart to Cleanliness 💙<BR></div>
+      The story of our company is not just a business tale — it’s a real journey of strength, faith, and care.<BR>
+      It all started in the summer of 2022, when Maria — a refugee from Ukraine — arrived in Portugal <BR>
+      nothing but a desire to survive and be useful. No connections, no language, no financial safety net…<BR>
+      just a big heart and a willingness to work. She took the first cleaning jobs herself — with a mop and<BR>
+      broom in hand. We cleaned everything: dusty apartments, old houses, post-rental messes, and<BR>
+      even abandoned properties untouched for years.<BR>
+      But everything changed. Soon, like-minded people joined Maria. From just one order per week, we<BR>
+      grew to dozens every day. Today, our team includes 12 full-time professionals and more than 15<BR>
+      seasonal workers. We clean not only apartments and villas, but also restaurants, offices, and<BR>
+      commercial properties. Yes — even a yacht!<BR>
+     </section>
+    </section>
+  <section id=HowITWork1>
+    <script style="display:none">
+      function ITWork1Close() {
+        const SectionITWork1Close=document.getElementById('CloseFormHowITWork1');
+        if (480<screen.width) SectionITWork1Close.style='width:80%; display:flex;flex-direction: row-reverse; justify-content: flex-start;'
+        else SectionITWork1Close.style='width:80vw; height:2vh;display:flex;flex-direction: row-reverse; justify-content: flex-start;';
+      }
+      window.onload=ITWork1Close;
+    </script>
+    <div id=CloseFormHowITWork1>
+    <A href="#Linksfooterbottom" id=LinksCloseSectionHowITWork1>
+     <img id=ImageCloseSectionHowITWork1 src="/graphics/Iconly/Icon-Close.png" 
+     alt="Icon-Close">
+    <script style="display: none;">
+        document.getElementById('ImageCloseSectionHowITWork1').addEventListener("click",
+          function () {
+            document.getElementById("HowITWorkAudio").currentTime="0";document.getElementById("HowITWorkAudio").pause();
+          }
+        );
+    </script>
+    </A>
+    
+   </div>
+   
+   <H1>How IT Work </H1>
+   <section id=HowITWork2>
+      
+      <div id=RegCleanHowITWork2>
+        <H1>Regular cleaning</H1>
+        Order at home – success in life! <br>
+        Regular cleaning without hassle <br>
+        helps you enjoy cleanliness and <br>
+        comfort every day. Free up your <br>
+        time for important things while <BR>
+        we take care of your home.                    
+      </div>
+      <div id=AirbnbCleanHowITWork2>
+          <H1>Airbnb cleaning</H1>
+          Hosting guests? Let us handle the<BR>
+          cleaning! Our Airbnb cleaning<BR>
+          service ensures your space is<BR>
+          spotless, fresh, and guest-ready.<BR>
+          Impress every visitor with a<br>
+          perfectly maintained home, while<BR>
+          you focus on hosting!
+      </div>
+      <div id=DeepCleanHowITWork2>
+          <H1>Deep cleaning</H1> 
+          A fresh start for your home! Our <BR>
+          deep cleaning service removes <BR>
+          dirt, dust, and hidden grime, <BR>
+          leaving your space looking and <BR>
+          feeling brand new. Perfect for <BR>
+          seasonal refreshes or post- <br>
+          renovation clean-ups.
+      </div>
+   </section>
+    
+  </section> 
+<!-- Кінець даної секції <section id=HowITWork1> -->
+  <section id=sectionportfolio>
+    <div id=cliosesectionportfolio >
+                <A id=closesectiowithfoto href="#Linksfooterbottom"
+                style="margin:0; padding:0; align-items: center;">
+                  <img src="/graphics/Iconly/Icon-Close.png" 
+                  style="margin:0; padding:0;  align-self: center;"
+                  alt="Icon-Close.png">
+                </A>
+                  <h1 style="justify-content: center; margin-right:30%;
+                  align-self: center;"> Our Works </h1>
+    </div>
+    <section id=intsectionporfolio>
+      <button id=LeftButton>⬅<BR></button>
+                    
+        <section id=ScrolPortfolio>
+          <div id=content>
+            <img id=imgcontent src="/graphics/RobotyMaryCleaning/fa-dribbble.png" alt="fa-dribbble.png">
+          </div>
+          <div id=content><img id=imgcontent1 src="/graphics/RobotyMaryCleaning/robota2.png" alt="robota2.png"> </div>
+          <div id=content><img id=imgcontent2 src="/graphics/RobotyMaryCleaning/robota3.png" alt="robota3.png" > </div>
+        </section>
+        <script style="display:none"> 
+            document.getElementById('closesectiowithfoto').addEventListener('click',()=>{
+                document.getElementById('audioforsectionportfoliolink').currentTime='0';
+                document.getElementById('audioforsectionportfoliolink').pause();
+
+            }
+          );
+            
+          function imgcontentstyle () {
+            const imgcontent=document.getElementById('imgcontent');
+            const imgcontent1=document.getElementById('imgcontent1');
+            const imgcontent2=document.getElementById('imgcontent2');
+           if (screen.width>480) {
+            
+            imgcontent.style.width='inherit';
+            imgcontent.style.height='inherit';
+            imgcontent.style.margin='0';
+            imgcontent.style.border='0';
+            imgcontent.style.padding='0';
+
+            imgcontent1.style.width='inherit';
+            imgcontent1.style.height='inherit';
+            imgcontent1.style.margin='0';
+            imgcontent1.style.border='0';
+            imgcontent1.style.padding='0';
+
+            imgcontent2.style.width='inherit';
+            imgcontent2.style.height='inherit';
+            imgcontent2.style.margin='0';
+            imgcontent2.style.border='0';
+            imgcontent2.style.padding='0';
+            
+           }
+           else {
+            
+            imgcontent.style.width='100vw';
+            imgcontent.style.height='100%';
+            imgcontent.style.margin='0';
+            imgcontent.style.border='0';
+            imgcontent.style.padding='0'
+
+            imgcontent1.style.width='100vw';
+            imgcontent1.style.height='100%';
+            imgcontent1.style.margin='0';
+            imgcontent1.style.border='0';
+            imgcontent1.style.padding='0';//vw
+            imgcontent2.style.width='100vw';
+            imgcontent2.style.height='100%';
+            imgcontent2.style.margin='0';
+            imgcontent2.style.border='0';
+            imgcontent2.style.padding='0';
+           };
+          };
+          //document.addEventListener('load',imgcontentstyle);
+          imgcontentstyle();
+        </script>
+     <button id=RightButton>➡</button>
+    </section>
+   
+  </section>
+  <section id=AnimateSection> 
+    <img id=CloseBtn src="/graphics/Iconly/Icon-Close.png" alt="Close Button">
+    <img id=WithLoveToUkraine
+    src="/graphics/ILoveUkraine/MaryCleaningWithLoveToUkraine.png" 
+    alt="With Love To Ukraine from Mary Cleaning">
+    <button id="GimnUkrainy">National Anthem of Ukraine<BR>Державний гімн України</button>
+  </section>
+  <script>
+    const SectionAnimation=document.getElementById('AnimateSection');
+    const WithLoveToUkraine=document.getElementById('WithLoveToUkraine');
+    const GimnUkrainy=document.getElementById('GimnUkrainy');
+    if (480>=screen.width) {
+      WithLoveToUkraine.style.width='50vw';
+      WithLoveToUkraine.style.height='30vh';
+      SectionAnimation.style.width='80vw';
+      GimnUkrainy.style.height='20vh';
+      GimnUkrainy.style.width='50vw';
+    }
+  </script>
+
+<script src="/JavaScript/MaryCleaningLoveUkraineSection.js"> </script>  
+</body>  
+ <SCRIPT>
+  document.getElementById("UserLoginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Запобігає стандартному надсиланню форми
+
+    fetch("/submit", {
+        method: "POST",
+       body: new FormData(event.target)
+    }).then(response => response.text())
+      .then(data => console.log("Відповідь сервера:", data));
+alert ('Your email address as login and your password for your enter has been accepted but cannot be processed because this web page is working in demo mode.');
+}
+);
+</SCRIPT>
+
+<script> 
+  document.getElementById("EMAIL").addEventListener("submit",
+            function (event) {
+              event.preventDefault(); // Запобігає стандартному надсиланню форми
+              fetch("/submit",
+                {
+                  method:"POST",
+                  body: new FormData(event.target)
+                }
+              ).then(response => response.text())
+               .then(data => console.log ("Відповідь сервера:", data));
+alert ('Your email address for your subscibe has been accepted but it cannot be processed because this web page is working in demo mode');             
+            }
+  );
+ </script>
+ <!-- EMAIL -->
+ <script>
+  // В наступній сецкції даного скрипта формується алгоритм, що забеспечить правільне 
+  // прокручування даної відповідної секції section id=ScrolPortfolio, коли користувая клікне 
+  // на однієї з її кнопок одна з яких розташовується ліворуч (вона позначається 
+  // скерованною стрілкою вліво) а інша - праворуч ((вона позначається 
+  // скерованною стрілкою вправо)
+
+//---============================= Початок даної секції =============================----
+
+   //Формуємо об'єктне значення для опису даного об'єкта section id=ScrolPortfolio для 
+   // вмісту которого забеспечити коректне прокручування коли це необхідно і зберігаємо
+  // його адресу в пам'яті пристрою в змінній ScrolPortfolio.
+  ScrolPortfolio=document.getElementById ("ScrolPortfolio");
+   // Формуємо об'єкте значення в зоні опису об'єкта даної WEB-сторінки 
+   // з ідентифікатором LeftButton, який є лівою кнопкою даної її відповідної 
+   // секції section id=ScrolPortfolio, що вкладеною в також її відповідну секцію section=Portfolio,
+   // в наслідок чого його властивості стають властивостями даного об'єктного значення.
+   // І оскільки дане об'єктне значення врешті решт формується за допомогою даного 
+   // метода document.getElementById в його скаді до опису даного об'єкта автоматично додаються
+   // певні і дуже корисні для нас методи. Зокрема метод .addEventListener, який використувується для
+   // додавання події "click" щодо даного об'єкта (це клік лівою кнопкою миши), щоб
+   // браузер автоматично фіксував дану подію коли користувач дійсно клікне лівою кнопкою миши
+   // на даному об'єкті і запускав на виконання необхідний нам обробник даної події, який 
+   // який також додається даним методом.
+   let LeftButton=document.getElementById ("LeftButton");
+    // Формуємо об'єкте значення в зоні опису об'єкта даної WEB-сторінки 
+   // з ідентифікатором RightButton, який є правою кнопкою даної її відповідної 
+   // секції section id=ScrolPortfolio, що вкладеною в також її відповідну секцію section=Portfolio,
+   // в наслідок чого його властивості стають властивостями даного об'єктного значення.
+   // І оскільки дане об'єктне значення врешті решт формується за допомогою даного 
+   // метода document.getElementById в його скаді до опису даного об'єкта автоматично додаються
+   // певні і дуже корисні для нас методи. Зокрема метод .addEventListener, який використувується для
+   // додавання події "click" щодо даного об'єкта (це клік лівою кнопкою миши), щоб
+   // браузер автоматично фіксував дану подію коли користувач дійсно клікне лівою кнопкою миши
+   // на даному об'єкті і запускав на виконання необхідний нам обробник даної події, який 
+   // який також додається даним методом.
+   if (480<screen.width) {
+   let RightButton=document.getElementById ("RightButton");
+  // Додаємо реакцію на натискання лівої кнопки даної секції section id=ScrolPortfolio і її
+  // відповідну прокрутку вліво у відповідь на дану подію.
+   LeftButton.addEventListener ("click", () => {
+    ScrolPortfolio.scrollBy ({left:-610, behavior:"smooth"});
+   }
+  );
+  // Додаємо реакцію на натискання правої кнопки даної секції section id=ScrolPortfolio і її
+  // відповідну прокрутку вліво у відповідь на дану подію.
+  RightButton.addEventListener ("click", () => {
+    ScrolPortfolio.scrollBy ({left:610, behavior:"smooth"});
+  }
+  );
+ } 
+ else {
+   let RightButton=document.getElementById ("RightButton");
+  // Додаємо реакцію на натискання лівої кнопки даної секції section id=ScrolPortfolio і її
+  // відповідну прокрутку вліво у відповідь на дану подію.
+   LeftButton.addEventListener ("click", () => {
+    ScrolPortfolio.scrollBy ({left:-screen.width, behavior:"smooth"});
+   }
+  );
+  // Додаємо реакцію на натискання правої кнопки даної секції section id=ScrolPortfolio і її
+  // відповідну прокрутку вліво у відповідь на дану подію.
+  RightButton.addEventListener ("click", () => {
+    ScrolPortfolio.scrollBy ({left:screen.width, behavior:"smooth"});
+  }
+  );
+ } 
+ // -======================== Кінець даної секції та даного алгоритиму ==================-
+</script>
+
+<script>
+  
+  document.getElementById("header_button").addEventListener ("click", 
+    function (event) {
+    alert ("Your click on the Calculate for free button has been recorded and your request for a free calculation has been accepted, but your WEB page is working in demo mode and therefore this calculation is not possible.");
+  }
+  );
+</script>
+<script>
+   document.getElementById("bottom-freequote").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+</script>
+<script>
+   document.getElementById("bottom-freequote1").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+</script>
+<script>
+   document.getElementById("bottom-freequote2").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+</script>
+<script>
+   document.getElementById("servicebuttom").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+</script>
+<script>
+   document.getElementById("servicebuttom1").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+   </SCRIPT>
+<script>
+   document.getElementById("servicebuttom2").addEventListener ("click",
+    function(event) {
+      alert ("Your click on this button Free Quote has been recorded and this request for this free quote has been received. But it cannot be processed as this website is in demo mode.");
+    }
+   );
+</script>
+<script>
+if ('ontouchstart' in window) {
+    // Код для мобільних пристроїв
+    document.getElementById("TextAboutTheDevolopers").addEventListener("touchmove", function(event) {
+        event.stopPropagation();
+    }, { passive: true });
+} else {
+    // Код для десктопів
+    console.log("Це десктопний браузер, змін не потрібно.");
+} 
+</script>
+<script>
+  function StyleButtomForVideo (ParmElementButton){
+    const elementButtonHTMLCollection=document.getElementsByClassName(ParmElementButton);
+    const elementButton=elementButtonHTMLCollection[0];
+    elementButton.style.width="10%";
+    elementButton.style.height="40%";
+    elementButton.style.border="2px solid #1E0E62";
+    elementButton.style.backgroundColor="#EDAD03";
+    elementButton.style.display="flex";
+    elementButton.style.flexDirection="column";
+    elementButton.style.justifyContent="center";
+    elementButton.style.alignItems="center";
+    elementButton.style.fontFamily="Roboto";
+    elementButton.style.fontSize="300%";
+    elementButton.style.fontWeight="Bold";
+    elementButton.style.color="#fff";
+    elementButton.style.borderRadius="28px";
+  };
+  StyleButtomForVideo("RightButtomForSectionVideo");
+  StyleButtomForVideo("LeftButtomForSectionVideo");
+</script>
+<script>
+  const  oursectionforcontainerforvideo=document.getElementById("sectionforcontainerforvideo");
+
+  oursectionforcontainerforvideo.style.display="flex";
+  oursectionforcontainerforvideo.style.justifyContent="center";
+  oursectionforcontainerforvideo.style.alignItems="center";
+  oursectionforcontainerforvideo.style.flexDirection="row";
+  oursectionforcontainerforvideo.style.height="100%";
+  oursectionforcontainerforvideo.style.width="100%";
+</script>
+<section id=sectionforvideo>
+  
+</section>
+
+<script style="display:none">
+  const ArrayDivWithRegularCleaning=document.querySelectorAll('.Regular-cleaning');
+  ArrayDivWithRegularCleaning.forEach(divelement=>{
+    divelement.classList.add('open-section');
+    console.log(divelement);
+  }
+);
+  console.log("Скрипт виконано!")
+</script>
+<script style="display:none">
+ const Arraydescrservicefirstcontainer=document.querySelectorAll('.descrservicefirstcontainer');
+ Arraydescrservicefirstcontainer.forEach(function(sectionElement){
+ sectionElement.classList.add('open-section');
+}
+);
+</script>
+</html>

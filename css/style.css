@@ -1,0 +1,148 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #222;
+  --accent: #3498db;
+}
+
+body.dark {
+  --bg: #1c1c1c;
+  --text: #f1f1f1;
+  --accent: #9b59b6;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-style: italic;
+  color: var(--accent);
+}
+
+button#theme-toggle {
+  margin-top: 1rem;
+  background: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--accent);
+  background-color: transparent;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#projects {
+  background-color: #f7f9fc;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+
+#projects h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#projects ul {
+  list-style-type:square;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#projects li {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#projects strong {
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+#projects a {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
+#skills h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#skills ul {
+  list-style-type:square;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#skills li {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#skills strong {
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+#skills a {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#skills a:hover {
+  text-decoration: underline;
+}

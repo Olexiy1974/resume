@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Підключаємо потрібні нам  стилі -->
+    <!-- <link rel="stylesheet" href="/CSS/mary-cleaning.css"> -->
+    <!-- Підключаємо потрібні нам шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+  <style type="text/css">
+    html {
+      position: fixed;top:0;left:15%;box-sizing: border-box;box-shadow: 10px 20px 20px 2px black;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+      height:600px;
+      width:600px; 
+      border: 2px solid;
+      border-radius:28px;margin: 0;
+      padding:0 ;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin:0;
+      box-sizing: border-box;
+      box-shadow: 10px 20px 20px 2px black;
+      padding:0;
+      background-image: url(/graphics/myika-vikon/myika.png); 
+      position:initial;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      top:0;
+      left:0;
+      bottom: 0;
+      right:0;
+      z-index:2;
+      /* background-position: middle;*/
+      height:500px;
+      min-height: 400px; 
+      width:500px;
+      border: 2px solid;
+      border-radius:28px;
+    }
+    section#SectionText {
+      border: 2px solid;
+      width:550px;
+      height:300px;
+      align-self: center;
+      font-family:Roboto;
+      font-size:25px;
+      color:#1E0E62;
+      opacity:0;
+      box-sizing: border-box;
+      box-shadow: 10px 20px 20px 2px black;
+      background-color:white;
+      border-radius: 28px;
+      white-space: pre;
+      text-align: center;
+      letter-spacing: 0;
+      display:flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-self: center;
+      /* background-color: #E5E5E5; */
+      transform:scale(0.1) translateY(-10px);
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out, filter 1.5s ease-in-out;
+    }
+    #closeBTN {
+      background-color: #EDAD03;
+      border-radius: 28px;
+      color:white;
+      align-self: center;
+      margin:0; 
+      width:25%;
+      padding:0;
+      font-size:25px;
+    }
+    section#SectionText.show {
+      transform:scale(1) translateY(10px);
+      opacity:1;
+    }
+    section#SectionText.hide {
+      transform:scale(0.1) translateY(-10px);
+      opacity:0;
+    }
+
+  </style>
+  </head>
+  <body>
+    
+    <section id=SectionText>
+      <div style="justify-self: center;margin:0; padding:0;">
+      Our workers are real sorcerers and magicians.
+      They create real witchcraft and real magic 
+      of cleanliness, order, comfort and 
+      coziness in your home
+      </div>
+      <button id=closeBTN>Close</button>
+    </section>
+
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) { 
+    var closeBTN=document.getElementById("closeBTN");
+    var section=document.getElementById("SectionText");
+    closeBTN.addEventListener("click", function(event)
+   {
+     if (window.opener) {
+      section.classList.add("hide");
+      setTimeout(
+        ()=>{
+          section.style.display="none";
+        },1000
+      );
+      setTimeout(
+        ()=>{
+          window.close();
+        },
+      500
+      );     
+    };
+   }//;
+  ); // Кінець closeBTN.addEventListener("click", function(event){})
+  setTimeout(
+    ()=> {section.classList.add("show");},1000
+  );  
+ }
+); // Кінець document.addEventListener("click", function(event){})
+  
+  </script>
+</html>
